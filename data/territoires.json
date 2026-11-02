@@ -1,0 +1,1912 @@
+[
+  {
+    "region": "Adrar",
+    "code": "ADR",
+    "moughataas": [
+      {
+        "nom": "Aoujeft",
+        "communes": [
+          {
+            "nom": "Aoujeft",
+            "localites": [
+              "Aoujeft"
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "Atar",
+        "communes": [
+          {
+            "nom": "Aïn Ehel Taya",
+            "localites": [
+              "Aïn EhelTaya"
+            ]
+          },
+          {
+            "nom": "Atar",
+            "localites": [
+              "Atar"
+            ]
+          },
+          {
+            "nom": "Choum",
+            "localites": [
+              "Choum"
+            ]
+          },
+          {
+            "nom": "Tawaz",
+            "localites": [
+              "Gseir Eterchane"
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "Chinguitti",
+        "communes": [
+          {
+            "nom": "Chinguitti",
+            "localites": [
+              "Chinguitty"
+            ]
+          },
+          {
+            "nom": "Elaïn Essavra",
+            "localites": [
+              "Aine Essavra"
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "Ouadane",
+        "communes": [
+          {
+            "nom": "Ouadane",
+            "localites": [
+              "Ouadane"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "region": "Assaba",
+    "code": "ASS",
+    "moughataas": [
+      {
+        "nom": "Barkewol",
+        "communes": [
+          {
+            "nom": "Barkewol",
+            "localites": [
+              "Barkewol",
+              "Debay  Barkéwol Lakhdh"
+            ]
+          },
+          {
+            "nom": "Boulahrath",
+            "localites": [
+              "Boulahrathe 1",
+              "Boulahrathe 2"
+            ]
+          },
+          {
+            "nom": "Daghveg",
+            "localites": [
+              "Daghveg"
+            ]
+          },
+          {
+            "nom": "Elghabra",
+            "localites": [
+              "Bamoira  Elmedrassa",
+              "Bou Edemyane",
+              "Boubaghja Edechra",
+              "Chayef",
+              "Elghabra",
+              "Oudey Eness",
+              "Tijar"
+            ]
+          },
+          {
+            "nom": "Gulleir",
+            "localites": [
+              "Gueleir"
+            ]
+          },
+          {
+            "nom": "Laeweissi",
+            "localites": [
+              "Gdemballa",
+              "Laeweissi",
+              "Msab Laeweissi",
+              "Vorae Laechoucha"
+            ]
+          },
+          {
+            "nom": "Lebheir",
+            "localites": [
+              "Lebheir"
+            ]
+          },
+          {
+            "nom": "Rdheidhie",
+            "localites": [
+              "Elharameine",
+              "Lehneikatt",
+              "Rdheidhi"
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "Boumdeid",
+        "communes": [
+          {
+            "nom": "Boumdeid",
+            "localites": [
+              "Boumdeid"
+            ]
+          },
+          {
+            "nom": "Levtah",
+            "localites": [
+              "Leftah"
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "Guerou",
+        "communes": [
+          {
+            "nom": "Elghaira",
+            "localites": [
+              "Elghaira"
+            ]
+          },
+          {
+            "nom": "Guerou",
+            "localites": [
+              "Guerou",
+              "Ntakatt",
+              "Tweighida"
+            ]
+          },
+          {
+            "nom": "Kamour",
+            "localites": [
+              "Bamoira",
+              "Kamour"
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "Kankoussa",
+        "communes": [
+          {
+            "nom": "Blajmil",
+            "localites": [
+              "Seyal"
+            ]
+          },
+          {
+            "nom": "Hamed",
+            "localites": [
+              "Bouhabcha Elbadiya",
+              "Daghveg",
+              "Hamed",
+              "Iziwaz",
+              "Teguelweza  Ehel Emhi"
+            ]
+          },
+          {
+            "nom": "Kankoussa",
+            "localites": [
+              "Agmamine Echarghiya",
+              "Hay Elmadrassa 3",
+              "Kenkoussa"
+            ]
+          },
+          {
+            "nom": "Sani",
+            "localites": [
+              "Dar Enaim1",
+              "Sani"
+            ]
+          },
+          {
+            "nom": "Tenaha",
+            "localites": [
+              "Chkata",
+              "Tamourett Lekwar",
+              "Tenaha"
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "Kiffa",
+        "communes": [
+          {
+            "nom": "Aghorat",
+            "localites": [
+              "Aghoratt",
+              "Eguini Rass Elvil",
+              "Fam_Lekhdheiratt",
+              "Ouadane",
+              "Oum Elghoura",
+              "Rachid"
+            ]
+          },
+          {
+            "nom": "Elmelga",
+            "localites": [
+              "Zweira"
+            ]
+          },
+          {
+            "nom": "Kiffa",
+            "localites": [
+              "Kendra",
+              "Kiffa",
+              "Oum Echegag 2",
+              "Saada"
+            ]
+          },
+          {
+            "nom": "Kouroudjel",
+            "localites": [
+              "Kouroudjel"
+            ]
+          },
+          {
+            "nom": "Lagrane",
+            "localites": [
+              "Legrane"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "region": "Brakna",
+    "code": "BRK",
+    "moughataas": [
+      {
+        "nom": "Aleg",
+        "communes": [
+          {
+            "nom": "Aghchorguit",
+            "localites": [
+              "Aghchorguitt",
+              "Elbeled Etayib",
+              "Ouad Elghareg"
+            ]
+          },
+          {
+            "nom": "Aleg",
+            "localites": [
+              "Aleg",
+              "Dar Naim1",
+              "Dar Naim3",
+              "Elb Jmel",
+              "Lehleiwa",
+              "Teiba"
+            ]
+          },
+          {
+            "nom": "Bouhdida",
+            "localites": [
+              "Agweida",
+              "Bouhdida",
+              "Elazlatt",
+              "Lealeibatt",
+              "Moundi",
+              "Zeghlane"
+            ]
+          },
+          {
+            "nom": "Chegar",
+            "localites": [
+              "Chegar"
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "Bababé",
+        "communes": [
+          {
+            "nom": "Bababé",
+            "localites": [
+              "Bababé",
+              "Dioudé Diéri"
+            ]
+          },
+          {
+            "nom": "Elverae",
+            "localites": [
+              "Abdalla Diéri",
+              "Rgueig",
+              "Tadioukel"
+            ]
+          },
+          {
+            "nom": "Hayré Mbar",
+            "localites": [
+              "Aéré Goléré",
+              "Aéré Mbar",
+              "Sabo Alla",
+              "Seno  Boussobé",
+              "Wothie"
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "Boghé",
+        "communes": [
+          {
+            "nom": "Boghé",
+            "localites": [
+              "Bakaw",
+              "Boghé",
+              "Daghveg",
+              "Dioullom",
+              "Houdallay",
+              "Mballadji 1",
+              "Roti",
+              "Sarandougou Diberi",
+              "Thialgou",
+              "Thidé",
+              "Thienel",
+              "Waboundé"
+            ]
+          },
+          {
+            "nom": "Dar Elavya",
+            "localites": [
+              "Dar El Avia",
+              "Mouftah Elkheir"
+            ]
+          },
+          {
+            "nom": "Dar Elbarka",
+            "localites": [
+              "Sinthiane Diama 1"
+            ]
+          },
+          {
+            "nom": "Woul Birem",
+            "localites": [
+              "Avdieidjir",
+              "Dar Salam 1",
+              "Maghamitt Wematt",
+              "Ould Birem 1"
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "Maal",
+        "communes": [
+          {
+            "nom": "Bourat",
+            "localites": [
+              "Bassinguidi"
+            ]
+          },
+          {
+            "nom": "Djelwar",
+            "localites": [
+              "Ould Bougseiss",
+              "Zrag Ainou"
+            ]
+          },
+          {
+            "nom": "Elbatha",
+            "localites": [
+              "Sleiliha"
+            ]
+          },
+          {
+            "nom": "LemOudou",
+            "localites": [
+              "Lem Oudou",
+              "Zaghoura (Belekhtayir 1"
+            ]
+          },
+          {
+            "nom": "Maal",
+            "localites": [
+              "Eljedida",
+              "Maal",
+              "Tembara"
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "Magtae Lahjar",
+        "communes": [
+          {
+            "nom": "Djonaba",
+            "localites": [
+              "Bediengal",
+              "Chegar Gadel 2 Debay",
+              "Gadel Essed"
+            ]
+          },
+          {
+            "nom": "Magta lahjar",
+            "localites": [
+              "Magtae Lahjar"
+            ]
+          },
+          {
+            "nom": "Sangrava",
+            "localites": [
+              "Lekhteitt",
+              "Sangrava",
+              "Tadreissa"
+            ]
+          },
+          {
+            "nom": "Wad Amour",
+            "localites": [
+              "Agmeimine Idadhess",
+              "Ouad Amour"
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "Mbagne",
+        "communes": [
+          {
+            "nom": "Bagodine",
+            "localites": [
+              "Bagodine",
+              "Fondou",
+              "Lewe demba gouro",
+              "Mbeidiaa",
+              "Woloum hatar"
+            ]
+          },
+          {
+            "nom": "Edebay Elhejjaj",
+            "localites": [
+              "Belel gawde",
+              "Bouchama",
+              "Debay elhijaj",
+              "Lembaghded"
+            ]
+          },
+          {
+            "nom": "Mbagne",
+            "localites": [
+              "Dabe",
+              "Dawَalel",
+              "Feralla",
+              "Haimedatt",
+              "M’Bagne",
+              "Wending"
+            ]
+          },
+          {
+            "nom": "Niabina",
+            "localites": [
+              "Garlol",
+              "Mbahe",
+              "Mboto",
+              "Ndiawaldi mango",
+              "Niabina"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "region": "Dakhlet Nouadhibou",
+    "code": "DND",
+    "moughataas": [
+      {
+        "nom": "Chami",
+        "communes": [
+          {
+            "nom": "Chami",
+            "localites": [
+              "Cham"
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "Nouadhibou",
+        "communes": [
+          {
+            "nom": "Boulenwar",
+            "localites": [
+              "Boulenouar"
+            ]
+          },
+          {
+            "nom": "Nouadhibou",
+            "localites": [
+              "Nouadhibou"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "region": "Gorgol",
+    "code": "GOR",
+    "moughataas": [
+      {
+        "nom": "Kaédi",
+        "communes": [
+          {
+            "nom": "Djowol",
+            "localites": [
+              "Diengua",
+              "Djéol",
+              "Gory",
+              "Guiray",
+              "Leaweinatt",
+              "Téthiane"
+            ]
+          },
+          {
+            "nom": "Kaédi",
+            "localites": [
+              "Bélinabé",
+              "Kaédi",
+              "Rindiaw"
+            ]
+          },
+          {
+            "nom": "Néré Walo",
+            "localites": [
+              "Ndiafane Dioké",
+              "Néré Walo",
+              "Sila",
+              "Sinthiou Boubou Maka",
+              "Woloum Néré"
+            ]
+          },
+          {
+            "nom": "Tokomadji",
+            "localites": [
+              "Dindé",
+              "Erone",
+              "Gourel Gobi 1",
+              "Koundel",
+              "Tokomadji"
+            ]
+          },
+          {
+            "nom": "Toufnde Siwe",
+            "localites": [
+              "Civé",
+              "Garly1",
+              "Toufndé Civé"
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "Lexeiba1",
+        "communes": [
+          {
+            "nom": "Lexeiba1",
+            "localites": [
+              "Lexeiba"
+            ]
+          },
+          {
+            "nom": "Talhaya",
+            "localites": [
+              "Elakriche",
+              "Mafounda",
+              "Talhaya"
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "Maghama",
+        "communes": [
+          {
+            "nom": "Beileguet Litama",
+            "localites": [
+              "Beiliguett Litama"
+            ]
+          },
+          {
+            "nom": "Daw",
+            "localites": [
+              "Daw",
+              "Taga"
+            ]
+          },
+          {
+            "nom": "Dolol Siwe",
+            "localites": [
+              "Dolol Cive",
+              "Youmane Yiré"
+            ]
+          },
+          {
+            "nom": "Maghama",
+            "localites": [
+              "Dar Elbeidha",
+              "Fimbo",
+              "Maghama"
+            ]
+          },
+          {
+            "nom": "Sangné",
+            "localites": [
+              "Louguere 1",
+              "Sagné"
+            ]
+          },
+          {
+            "nom": "Toulel",
+            "localites": [
+              "Boguel Fadouwa",
+              "Nouma",
+              "Toulel"
+            ]
+          },
+          {
+            "nom": "Wali Djantang",
+            "localites": [
+              "Bedinki",
+              "Sinthiane Padalal",
+              "Waly Diantang"
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "Mbout",
+        "communes": [
+          {
+            "nom": "Chelkhet Tiyab",
+            "localites": [
+              "Debaye Batha"
+            ]
+          },
+          {
+            "nom": "Djadjibenni Gandega",
+            "localites": [
+              "Betek Ehel Ali",
+              "Betek Ehel Yemani",
+              "Elmane",
+              "Ndiadiebeni Chorfa",
+              "Ndiadiebeni Gandega"
+            ]
+          },
+          {
+            "nom": "Edebay Ehel Guelay",
+            "localites": [
+              "Bedizguene",
+              "Ehel Salem",
+              "Woid Amour"
+            ]
+          },
+          {
+            "nom": "Lahrach",
+            "localites": [
+              "Awcheikech",
+              "Awechkeche",
+              "Lahrache"
+            ]
+          },
+          {
+            "nom": "Mbout",
+            "localites": [
+              "Debay Mboutt",
+              "Mboutt",
+              "Ndoule"
+            ]
+          },
+          {
+            "nom": "Tarenguent Ehel Moulay Ely",
+            "localites": [
+              "Bouassla",
+              "Boudami Aghrekdhay",
+              "Tarenguett Ideichouf"
+            ]
+          },
+          {
+            "nom": "Tikobra",
+            "localites": [
+              "Mbeidia Awlad Eli",
+              "Mseiguem Maure"
+            ]
+          },
+          {
+            "nom": "Voum Legleita",
+            "localites": [
+              "Bachatt Edakhla",
+              "Bachatt Ould Beghrou",
+              "Kowb Edemja",
+              "Kowb Ehel  Ediay",
+              "Kowb Ehel Jaevar",
+              "Rakna2",
+              "Sabah Allah",
+              "Tentrama",
+              "Voum Legleita"
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "Monguel",
+        "communes": [
+          {
+            "nom": "Azgueilem Tiyab",
+            "localites": [
+              "Azgueilem  2",
+              "Boudherwa   1",
+              "Nimli"
+            ]
+          },
+          {
+            "nom": "Bathet Moït",
+            "localites": [
+              "Bathett Moitt",
+              "Elgatyatt",
+              "Tweijila"
+            ]
+          },
+          {
+            "nom": "Bokkel",
+            "localites": [
+              "Boukel Chweikla",
+              "Boukel Lemdene",
+              "Evediar Ehel Cheikh Oul",
+              "Regroupement Fadjadie 1"
+            ]
+          },
+          {
+            "nom": "Melzem Teichet",
+            "localites": [
+              "Levréa",
+              "Oudey Chrak Idewache",
+              "Tweizekra"
+            ]
+          },
+          {
+            "nom": "Monguel",
+            "localites": [
+              "Monguel"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "region": "Guidimakha",
+    "code": "GDM",
+    "moughataas": [
+      {
+        "nom": "Ghabou",
+        "communes": [
+          {
+            "nom": "Baidiam",
+            "localites": [
+              "Beidiam",
+              "Kenkou"
+            ]
+          },
+          {
+            "nom": "Chleikha",
+            "localites": [
+              "Arghaw",
+              "Boké Dianbi",
+              "Chleikha",
+              "Dar Salem",
+              "El Melga"
+            ]
+          },
+          {
+            "nom": "Diogountourou",
+            "localites": [
+              "Boroudji",
+              "Diogountourou",
+              "Guemou",
+              "Koumba Ndaw",
+              "Maghajouga",
+              "Solou"
+            ]
+          },
+          {
+            "nom": "Ghabou",
+            "localites": [
+              "Ghabou",
+              "Saboussiré"
+            ]
+          },
+          {
+            "nom": "Gouraye",
+            "localites": [
+              "Boutenda",
+              "Diaguily",
+              "Diamdiam",
+              "Eljedida",
+              "Gouraye",
+              "Lislam",
+              "Samba Kandji",
+              "Toumbou",
+              "Wendou Goubé",
+              "Zneigui Foulbé"
+            ]
+          },
+          {
+            "nom": "Soufi",
+            "localites": [
+              "Amaga Ehel Mokhtar ould",
+              "Mbeidi Amaga",
+              "Souvi"
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "Ould Yenge",
+        "communes": [
+          {
+            "nom": "Bouanz",
+            "localites": [
+              "Bouanz",
+              "Ndiew"
+            ]
+          },
+          {
+            "nom": "Boully",
+            "localites": [
+              "Chelkha Dakhana",
+              "El Metailag  Edebay",
+              "El Metailag El medene",
+              "Kalinioro",
+              "Leabouli",
+              "Ouweid amour Roumda",
+              "Saidou Ehel Sidi"
+            ]
+          },
+          {
+            "nom": "Dafort",
+            "localites": [
+              "Bouguerba 2",
+              "Dafort",
+              "Lembeidi Assagha"
+            ]
+          },
+          {
+            "nom": "Lehraj",
+            "localites": [
+              "Douboulgui",
+              "Lahraje Diam-Diam"
+            ]
+          },
+          {
+            "nom": "Ould Yenge",
+            "localites": [
+              "Gourvafa",
+              "Ould Yengé"
+            ]
+          },
+          {
+            "nom": "Tektaka",
+            "localites": [
+              "Teidouma Zbeiratt",
+              "Tektaka samba Ngouma"
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "Sélibaby",
+        "communes": [
+          {
+            "nom": "Hassi Chegar",
+            "localites": [
+              "Dangueremou",
+              "Diyala",
+              "Hamdallah",
+              "Hassi Chegar",
+              "Kinikoumou",
+              "Niorodel Sambarou Ba"
+            ]
+          },
+          {
+            "nom": "Ouloumbony",
+            "localites": [
+              "Hsey Laetach",
+              "Ould M'Bonny Djbaya",
+              "Ould M'Bonny Edebay",
+              "Thiénel Djibaya"
+            ]
+          },
+          {
+            "nom": "Sélibaby",
+            "localites": [
+              "Mbeighirett Bilal",
+              "Sélibaby"
+            ]
+          },
+          {
+            "nom": "Tachott",
+            "localites": [
+              "Artmou",
+              "Hassi Sidi edebay",
+              "louwara Ehel lekhal",
+              "Nieleba soninké",
+              "Tachott",
+              "Tachott brana"
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "Wompou",
+        "communes": [
+          {
+            "nom": "Agoueinit",
+            "localites": [
+              "Agweinitt"
+            ]
+          },
+          {
+            "nom": "Ajar",
+            "localites": [
+              "Ejar Ehel Ali",
+              "Ejar Soninké"
+            ]
+          },
+          {
+            "nom": "Arr",
+            "localites": [
+              "Arr",
+              "Diagui Oumar Nouh",
+              "Hassi Bagra",
+              "Tabal 4",
+              "Teichetaya"
+            ]
+          },
+          {
+            "nom": "Sagné Dieri",
+            "localites": [
+              "Guédiéwal",
+              "Ould Erami Foulbé",
+              "Sangué Diéri"
+            ]
+          },
+          {
+            "nom": "Wompou",
+            "localites": [
+              "Tagoutalla",
+              "Wompou"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "region": "Hodh Chargui",
+    "code": "HEC",
+    "moughataas": [
+      {
+        "nom": "Adel Bagrou",
+        "communes": [
+          {
+            "nom": "Adel Bagrou",
+            "localites": [
+              "Adel Begrou"
+            ]
+          },
+          {
+            "nom": "Sivane",
+            "localites": [
+              "Dar Elkheir",
+              "Sivane 1",
+              "Zraviyatt"
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "Amourj",
+        "communes": [
+          {
+            "nom": "Amourj",
+            "localites": [
+              "Amourj"
+            ]
+          },
+          {
+            "nom": "Bougadoum",
+            "localites": [
+              "Elmebdoua 2"
+            ]
+          },
+          {
+            "nom": "Djeigui",
+            "localites": [
+              "Legaida"
+            ]
+          },
+          {
+            "nom": "Legdour",
+            "localites": [
+              "Legdour",
+              "Tweimirt Lemarid"
+            ]
+          },
+          {
+            "nom": "Oum Echeiche",
+            "localites": [
+              "Boutib 1",
+              "Oum Eacheiche",
+              "Vraikika"
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "Bassiknou",
+        "communes": [
+          {
+            "nom": "Bassiknou",
+            "localites": [
+              "Bassiknou"
+            ]
+          },
+          {
+            "nom": "Dhar",
+            "localites": [
+              "Gneibett Khairi"
+            ]
+          },
+          {
+            "nom": "Elmegve",
+            "localites": [
+              "Aghor",
+              "Elhassi Twil",
+              "Legrane"
+            ]
+          },
+          {
+            "nom": "Vassala",
+            "localites": [
+              "Camp Mberra",
+              "Diouweinkara",
+              "Elkheir Elgani",
+              "Kendierla",
+              "Kousana",
+              "Mbera 2",
+              "vassale"
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "Djiguenni",
+        "communes": [
+          {
+            "nom": "Aeweinat Zbel",
+            "localites": [
+              "Aeweinatt Zbil",
+              "Devaa"
+            ]
+          },
+          {
+            "nom": "Beneamane",
+            "localites": [
+              "Aine Elhawli",
+              "Voiniya 1"
+            ]
+          },
+          {
+            "nom": "Djiguenni",
+            "localites": [
+              "Djiguenni",
+              "Mint Hmeidett 1",
+              "Zeweirat Hassi Etleih"
+            ]
+          },
+          {
+            "nom": "Elmabrouk",
+            "localites": [
+              "Amricha",
+              "Djimi",
+              "Hassi Alak",
+              "Tichilitt"
+            ]
+          },
+          {
+            "nom": "Feirenni",
+            "localites": [
+              "Foireni",
+              "Oum Nour"
+            ]
+          },
+          {
+            "nom": "Ghlig Ehel Boyya",
+            "localites": [
+              "Bouleklal"
+            ]
+          },
+          {
+            "nom": "Ksar Elbarka",
+            "localites": [
+              "Bneibari",
+              "Gasr Elbarka",
+              "Tevragh Zeina"
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "Néma",
+        "communes": [
+          {
+            "nom": "Achemmim",
+            "localites": [
+              "AChimim"
+            ]
+          },
+          {
+            "nom": "Agweinit",
+            "localites": [
+              "Agweinitt",
+              "Boukhzama 1"
+            ]
+          },
+          {
+            "nom": "Bangou",
+            "localites": [
+              "Bengou",
+              "Ketawane 1"
+            ]
+          },
+          {
+            "nom": "Biribava",
+            "localites": [
+              "Biri Bava"
+            ]
+          },
+          {
+            "nom": "Elmabrouk",
+            "localites": [
+              "Elmebrouk"
+            ]
+          },
+          {
+            "nom": "Néma",
+            "localites": [
+              "Néma"
+            ]
+          },
+          {
+            "nom": "Nwal",
+            "localites": [
+              "Noual",
+              "Weizine"
+            ]
+          },
+          {
+            "nom": "Oum Avnadeche",
+            "localites": [
+              "Oum Avnadiche",
+              "Vani"
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "N’Beiket Lahwache",
+        "communes": [
+          {
+            "nom": "Nbeiket Lahwache",
+            "localites": [
+              "Nbeikett Lehouach 2"
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "Oualata",
+        "communes": [
+          {
+            "nom": "Oualata",
+            "localites": [
+              "Oualata"
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "Timbedra",
+        "communes": [
+          {
+            "nom": "Bousteila",
+            "localites": [
+              "Bousteila"
+            ]
+          },
+          {
+            "nom": "Hassi  Mhadi",
+            "localites": [
+              "Oum Goufa",
+              "Oum laedham",
+              "Oum Lemdag"
+            ]
+          },
+          {
+            "nom": "Koumbi Saleh",
+            "localites": [
+              "Koumbi Saleh",
+              "Yengui Ezemal"
+            ]
+          },
+          {
+            "nom": "Timbedra",
+            "localites": [
+              "Tembedgha"
+            ]
+          },
+          {
+            "nom": "Touil",
+            "localites": [
+              "Basta"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "region": "Hodh El Gharbi",
+    "code": "HEG",
+    "moughataas": [
+      {
+        "nom": "Aioun",
+        "communes": [
+          {
+            "nom": "Aïoun",
+            "localites": [
+              "Aioune"
+            ]
+          },
+          {
+            "nom": "Dweirara",
+            "localites": [
+              "Dweirara"
+            ]
+          },
+          {
+            "nom": "Oum Lahyadh",
+            "localites": [
+              "Oum Lehbal"
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "Koubenni",
+        "communes": [
+          {
+            "nom": "Elvoulaniya",
+            "localites": [
+              "Elvoulaniya"
+            ]
+          },
+          {
+            "nom": "Gougui Zemmal",
+            "localites": [
+              "Boiziyitt Laetariss",
+              "Gougui Zemal",
+              "Lekhzine Elguebliya"
+            ]
+          },
+          {
+            "nom": "Hassi Ehel Ahmed Bechna",
+            "localites": [
+              "Hassi Ould Ahmed Bichen"
+            ]
+          },
+          {
+            "nom": "Koubenni",
+            "localites": [
+              "Koubeni"
+            ]
+          },
+          {
+            "nom": "Leghlig",
+            "localites": [
+              "Aweinitt Ould Chedad",
+              "Leghlig",
+              "Lembeihra"
+            ]
+          },
+          {
+            "nom": "Medbougou",
+            "localites": [
+              "Borela 1",
+              "Borela 2",
+              "Eguerj  Youbawa",
+              "Kervi",
+              "Modibouguou"
+            ]
+          },
+          {
+            "nom": "Timzine",
+            "localites": [
+              "Bou Talhaya",
+              "Rezam",
+              "Termessa",
+              "Timzine",
+              "Treidatt Eteliya"
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "Tamchaket",
+        "communes": [
+          {
+            "nom": "Guaet Teidouma",
+            "localites": [
+              "Oum Lemhar"
+            ]
+          },
+          {
+            "nom": "Radhi",
+            "localites": [
+              "Radhi"
+            ]
+          },
+          {
+            "nom": "Sava",
+            "localites": [
+              "Guelab",
+              "Sava"
+            ]
+          },
+          {
+            "nom": "Tamchaket",
+            "localites": [
+              "Tamchaket"
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "Tintane",
+        "communes": [
+          {
+            "nom": "Aïn Varba",
+            "localites": [
+              "Aïn Varba"
+            ]
+          },
+          {
+            "nom": "Aweinat Tal",
+            "localites": [
+              "Daghveg",
+              "Jraif",
+              "Laeweinatt"
+            ]
+          },
+          {
+            "nom": "Devaa",
+            "localites": [
+              "Devaa",
+              "Elbouchra"
+            ]
+          },
+          {
+            "nom": "Hassi Abdallah",
+            "localites": [
+              "Elmoubrek"
+            ]
+          },
+          {
+            "nom": "Tintane",
+            "localites": [
+              "Ganeb",
+              "Liba",
+              "Tintane"
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "Touil",
+        "communes": [
+          {
+            "nom": "Baghdad",
+            "localites": [
+              "Baghdad",
+              "Messyel Guervav",
+              "Tegowditt"
+            ]
+          },
+          {
+            "nom": "Lehreijat",
+            "localites": [
+              "Niailiyett   Ideiboussa"
+            ]
+          },
+          {
+            "nom": "Sett",
+            "localites": [
+              "Ketwel",
+              "Sett"
+            ]
+          },
+          {
+            "nom": "Touil",
+            "localites": [
+              "Achweyef  1",
+              "Achweyef  2",
+              "Braima",
+              "Elmedina",
+              "Touil"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "region": "Inchiri",
+    "code": "INC",
+    "moughataas": [
+      {
+        "nom": "Akjoujt",
+        "communes": [
+          {
+            "nom": "Akjoujt",
+            "localites": [
+              "Akjoujt"
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "Bennechab",
+        "communes": [
+          {
+            "nom": "Bennechab",
+            "localites": [
+              "Benechab Jedid"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "region": "Nouakchott-Nord",
+    "code": "NKN",
+    "moughataas": [
+      {
+        "nom": "Dar Naim",
+        "communes": [
+          {
+            "nom": "Dar Naim",
+            "localites": [
+              "Dar Naim"
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "Teyaret",
+        "communes": [
+          {
+            "nom": "Teyaret",
+            "localites": [
+              "Teyarett"
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "Toujounine",
+        "communes": [
+          {
+            "nom": "Toujounine",
+            "localites": [
+              "Toujinine"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "region": "Nouakchott-Ouest",
+    "code": "NKO",
+    "moughataas": [
+      {
+        "nom": "Ksar",
+        "communes": [
+          {
+            "nom": "Ksar",
+            "localites": [
+              "Ksar"
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "Sebkha",
+        "communes": [
+          {
+            "nom": "Sebkha",
+            "localites": [
+              "Sebkha"
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "Tevragh Zeina",
+        "communes": [
+          {
+            "nom": "Tevragh Zeina",
+            "localites": [
+              "Tevragh Zeina"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "region": "Nouakchott-Sud",
+    "code": "NKS",
+    "moughataas": [
+      {
+        "nom": "Arafat",
+        "communes": [
+          {
+            "nom": "Arafat",
+            "localites": [
+              "Arafatt"
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "Elmina",
+        "communes": [
+          {
+            "nom": "Elmina",
+            "localites": [
+              "Elmina"
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "Riyad",
+        "communes": [
+          {
+            "nom": "Riyad",
+            "localites": [
+              "Riyad"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "region": "Tagant",
+    "code": "TAG",
+    "moughataas": [
+      {
+        "nom": "Moudjeria",
+        "communes": [
+          {
+            "nom": "Moudjeria",
+            "localites": [
+              "Moudjeria"
+            ]
+          },
+          {
+            "nom": "Soudoud",
+            "localites": [
+              "Acheram",
+              "Aine elkhacheba  eteliy"
+            ]
+          },
+          {
+            "nom": "Tamourt Neaj",
+            "localites": [
+              "Akneikir",
+              "Elmecherae",
+              "N'Beika",
+              "Ntitam"
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "Tichit",
+        "communes": [
+          {
+            "nom": "Tichit",
+            "localites": [
+              "Tichitt"
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "Tidjikja",
+        "communes": [
+          {
+            "nom": "Boubakar Ben Amer",
+            "localites": [
+              "El ghediya"
+            ]
+          },
+          {
+            "nom": "Elwahat",
+            "localites": [
+              "Rachid"
+            ]
+          },
+          {
+            "nom": "Nimlane",
+            "localites": [
+              "Iguevan 1",
+              "Nimlane"
+            ]
+          },
+          {
+            "nom": "Tidjikdja",
+            "localites": [
+              "Tidjikja"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "region": "Tiris Zemmour",
+    "code": "TZM",
+    "moughataas": [
+      {
+        "nom": "Bir Mogrein",
+        "communes": [
+          {
+            "nom": "Bir mogrein",
+            "localites": [
+              "Bir Mougreine"
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "Fdeirik",
+        "communes": [
+          {
+            "nom": "Fdeirik",
+            "localites": [
+              "Fdeirik"
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "Zoueratt",
+        "communes": [
+          {
+            "nom": "Zoueratt",
+            "localites": [
+              "Zoueiratt"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "region": "Trarza",
+    "code": "TRZ",
+    "moughataas": [
+      {
+        "nom": "Boutilimit",
+        "communes": [
+          {
+            "nom": "Boutilimit",
+            "localites": [
+              "Boutilimitt",
+              "Ouguey"
+            ]
+          },
+          {
+            "nom": "Elb Adres",
+            "localites": [
+              "Elb Adress"
+            ]
+          },
+          {
+            "nom": "Nebbaghiya",
+            "localites": [
+              "Nebbaghiya"
+            ]
+          },
+          {
+            "nom": "Nteichet",
+            "localites": [
+              "Arafatt"
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "Keur Macene",
+        "communes": [
+          {
+            "nom": "Keur Macene",
+            "localites": [
+              "KeurMacen"
+            ]
+          },
+          {
+            "nom": "Ndiago",
+            "localites": [
+              "Birett",
+              "Ndiagou"
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "Méderdra",
+        "communes": [
+          {
+            "nom": "Méderdra",
+            "localites": [
+              "Mederdra"
+            ]
+          },
+          {
+            "nom": "Taguilalet",
+            "localites": [
+              "Taguilalet"
+            ]
+          },
+          {
+            "nom": "Tiguent",
+            "localites": [
+              "Tiguent"
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "Ouad Naga",
+        "communes": [
+          {
+            "nom": "Ouad Naga",
+            "localites": [
+              "Idini",
+              "Ouad naga"
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "Rkiz",
+        "communes": [
+          {
+            "nom": "Bareina",
+            "localites": [
+              "Bareina",
+              "Belgherbane",
+              "Boubakar",
+              "Maata Moulana",
+              "Naimatt",
+              "Rebinett Ehel Cheikh El"
+            ]
+          },
+          {
+            "nom": "Boutalhaya",
+            "localites": [
+              "Ajweir",
+              "Boutalhaya",
+              "Douwara",
+              "Nkermedi",
+              "Ntizitt"
+            ]
+          },
+          {
+            "nom": "Rkiz",
+            "localites": [
+              "Douze Douze",
+              "Rkiz"
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "Rosso",
+        "communes": [
+          {
+            "nom": "Jedr Elmohguen",
+            "localites": [
+              "Satara"
+            ]
+          },
+          {
+            "nom": "Rosso",
+            "localites": [
+              "Ch'gara",
+              "Jedida",
+              "Rghaiwatt",
+              "Rosso"
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "Tekane",
+        "communes": [
+          {
+            "nom": "Chemame",
+            "localites": [
+              "Akeir",
+              "Awlig",
+              "Bouguemoune"
+            ]
+          },
+          {
+            "nom": "Lexelbe2",
+            "localites": [
+              "Legatt",
+              "Megham Ibrahim"
+            ]
+          },
+          {
+            "nom": "Teichtayat",
+            "localites": [
+              "Nasra 1"
+            ]
+          },
+          {
+            "nom": "Tekane",
+            "localites": [
+              "Gani",
+              "N Teikane",
+              "Oum Elghoura"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

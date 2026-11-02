@@ -1,0 +1,107 @@
+# Moov Money Backend
+
+This is the backend for the Moov Money service, a Node.js/Express application designed to manage agents and merchants. It provides a RESTful API for agent and merchant-related operations, including a multi-step validation process for merchant onboarding.
+
+## Key Features
+
+*   **Agent Management:** Register new agents, authenticate agents, and track their performance.
+*   **Merchant Onboarding:** A comprehensive, multi-step process for registering and validating new merchants.
+*   **Role-Based Access Control:** Different roles (Agent, Supervisor, Admin) with different levels of access and permissions.
+*   **Image Uploads:** Merchants can upload necessary documents, which are stored on Cloudinary.
+*   **Performance Tracking:** Agents' performance is tracked based on the number of merchants they onboard.
+*   **Logging:** Agent activities are logged for monitoring and auditing purposes.
+*   **Export:** Export data in various formats (functionality to be fully documented).
+
+## API Endpoints
+
+### Agent Routes
+
+*   `POST /api/agents/register`: Register a new agent.
+*   `POST /api/agents/login`: Authenticate an agent and receive a JWT token.
+*   `GET /api/agents/performance`: Get the performance data for the authenticated agent.
+
+### Merchant Routes
+
+*   `POST /api/merchants/createMerchant`: Create a new merchant.
+*   `POST /api/merchants/supervisor-validate/:id`: Supervisor validation step for a merchant.
+*   `POST /api/merchants/admin-validate/:id`: Admin validation step for a merchant.
+*   `POST /api/merchants/:id/deliver`: Confirm the delivery of a QR code to a merchant.
+*   `GET /api/merchants`: Get a list of all merchants.
+*   `GET /api/merchants/:id`: Get the details of a specific merchant.
+*   `PUT /api/merchants/:id`: Update the details of a specific merchant.
+*   `DELETE /api/merchants/:id`: Delete a merchant.
+
+## Merchant Validation Workflow
+
+The merchant onboarding process involves a three-step validation process:
+
+1.  **Creation:** An agent creates a new merchant profile. The merchant's status is set to `etape1`.
+2.  **Supervisor Validation:** A supervisor reviews the merchant's details and validates them. The status is then updated to `etape2`.
+3.  **Admin Validation:** An admin performs the final validation. The status is updated to `etape3`.
+
+Once a merchant is validated, a QR code is delivered to them, and the delivery is confirmed via the `deliver` endpoint.
+
+## Technologies Used
+
+*   **Node.js:** JavaScript runtime environment.
+*   **Express.js:** Web framework for Node.js.
+*   **MongoDB:** NoSQL database for storing data.
+*   **Mongoose:** ODM library for MongoDB and Node.js.
+*   **JWT (JSON Web Tokens):** For authentication.
+*   **Cloudinary:** For storing uploaded images.
+*   **Swagger:** For API documentation (to be fully implemented).
+
+## Installation and Setup
+
+1.  Clone the repository:
+    ```bash
+    git clone https://example.com/your-repo.git
+    ```
+2.  Install the dependencies:
+    ```bash
+    npm install
+    ```
+3.  Create a `.env` file in the root directory and add the following environment variables:
+    ```
+    PORT=5000
+    MONGO_URI=your_mongodb_connection_string
+    JWT_SECRET=your_jwt_secret
+    CLOUDINARY_CLOUD_NAME=your_cloudinary_cloud_name
+    CLOUDINARY_API_KEY=your_cloudinary_api_key
+    CLOUDINARY_API_SECRET=your_cloudinary_api_secret
+    ```
+4.  Start the server:
+    ```bash
+    npm start
+    ```
+
+## Project Structure
+
+```
+.
+├── controllers
+│   ├── logController.js
+│   └── merchantController.js
+├── middleware
+│   ├── authMiddleware.js
+│   ├── errorMiddleware.js
+│   ├── logger.js
+│   └── roleMiddleware.js
+├── models
+│   ├── Agent.js
+│   ├── Log.js
+│   └── Merchant.js
+├── routes
+│   ├── agentRoutes.js
+│   ├── exportRoutes.js
+│   ├── logRoutes.js
+│   └── merchantRoutes.js
+├── server.js
+└── ...
+```
+
+*   **`server.js`**: The main entry point of the application.
+*   **`controllers`**: Contains the business logic for the routes.
+*   **`middleware`**: Contains middleware functions for authentication, error handling, etc.
+*   **`models`**: Defines the Mongoose schemas for the database collections.
+*   **`routes`**: Defines the API endpoints.

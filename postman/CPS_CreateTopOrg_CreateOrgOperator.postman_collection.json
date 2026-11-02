@@ -1,0 +1,106 @@
+{
+  "info": {
+    "_postman_id": "a8c3e2f1-4b7d-4e9a-9c1d-moov-cps-toporg",
+    "name": "MOOV CPS — CreateTopOrg & CreateOrgOperator (backend)",
+    "description": "Collection générée à partir de `services/cpsSyncApi.js` et du flux de validation admin dans `routes/merchantRoutes.js`.\n\nRemplir les variables de collection (même noms que le `.env` backend). Ne jamais committer les vrais mots de passe.\n\nEndpoint testbed typique : `http://41.188.122.234:30001/payment/services/SYNCAPIRequestMgrService`",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    { "key": "CPS_URL", "value": "http://41.188.122.234:30001/payment/services/SYNCAPIRequestMgrService" },
+    { "key": "CPS_THIRD_PARTY_ID", "value": "" },
+    { "key": "CPS_PASSWORD", "value": "" },
+    { "key": "CPS_INITIATOR_IDENTIFIER_TYPE", "value": "12" },
+    { "key": "CPS_INITIATOR_IDENTIFIER", "value": "" },
+    { "key": "CPS_INITIATOR_SECURITY_CREDENTIAL", "value": "" },
+    { "key": "CPS_CALLER_TYPE", "value": "2" },
+    { "key": "CPS_KEY_OWNER", "value": "1" },
+    { "key": "CPS_RESULT_URL", "value": "http://10.74.189.145:8087/mockAPIResultMgrBinding" },
+    { "key": "CPS_TRUST_LEVEL", "value": "1" },
+    { "key": "CPS_PRODUCT_ID", "value": "45071" },
+    { "key": "CPS_COUNTRY_VALUE", "value": "MRT" },
+    { "key": "CPS_ORG_TYPE_VALUE", "value": "MERCHANT" },
+    { "key": "CPS_CONTACT_TYPE_VALUE", "value": "02" },
+    { "key": "CPS_PREFERRED_LANG", "value": "fr" },
+    { "key": "CPS_PREFERRED_CHANNEL", "value": "1001" },
+    { "key": "CPS_OPERATOR_ROLE_ID", "value": "500000000000011413" },
+    { "key": "CPS_OPERATOR_ROLE_EFFECTIVE_DATE", "value": "20260808" },
+    { "key": "CPS_OPERATOR_ROLE_EXPIRY_DATE", "value": "20990320" },
+    { "key": "CPS_OPERATOR_LANGUAGE_CODE", "value": "en" },
+    { "key": "CPS_OPERATOR_AUTH_TYPE", "value": "02" },
+    { "key": "CPS_OPERATOR_ID_TYPE", "value": "01" },
+    { "key": "CPS_OPERATOR_DOCUMENT_RECEIVED", "value": "Y" },
+    { "key": "CPS_OPERATOR_USERNAME", "value": "" },
+    { "key": "shortCode", "value": "029999" },
+    { "key": "organizationName", "value": "TEST MARCHAND POSTMAN" },
+    { "key": "merchantMsisdn", "value": "222XXXXXXXX" },
+    { "key": "cityValue", "value": "Nouakchott" },
+    { "key": "nifValue", "value": "00000001" },
+    { "key": "commercialRegisterValue", "value": "001/002" },
+    { "key": "contactFirstNameValue", "value": "Prenom" },
+    { "key": "operatorMsisdn", "value": "222YYYYYYYY" },
+    { "key": "operatorId", "value": "222YYYYYYYY" },
+    { "key": "operatorFirstName", "value": "Operateur" },
+    { "key": "operatorNni", "value": "1234567890" },
+    { "key": "timestamp", "value": "20260808040000" },
+    { "key": "originatorConversationId", "value": "S_20260808040000" }
+  ],
+  "item": [
+    {
+      "name": "1. CreateTopOrg",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "text/xml; charset=utf-8" },
+          { "key": "Accept", "value": "text/xml" },
+          { "key": "SOAPAction", "value": "CreateTopOrg" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:api=\"http://cps.huawei.com/synccpsinterface/api_requestmgr\" xmlns:req=\"http://cps.huawei.com/synccpsinterface/request\" xmlns:com=\"http://cps.huawei.com/synccpsinterface/common\" xmlns:cus=\"http://cps.huawei.com/cpsinterface/customizedrequest\">\n  <soapenv:Header/>\n  <soapenv:Body>\n    <api:Request>\n      <req:Header>\n        <req:Version>1.0</req:Version>\n        <req:CommandID>CreateTopOrg</req:CommandID>\n        <req:OriginatorConversationID>{{originatorConversationId}}</req:OriginatorConversationID>\n        <req:Caller>\n          <req:CallerType>{{CPS_CALLER_TYPE}}</req:CallerType>\n          <req:ThirdPartyID>{{CPS_THIRD_PARTY_ID}}</req:ThirdPartyID>\n          <req:Password>{{CPS_PASSWORD}}</req:Password>\n          <req:ResultURL>{{CPS_RESULT_URL}}</req:ResultURL>\n        </req:Caller>\n        <req:KeyOwner>{{CPS_KEY_OWNER}}</req:KeyOwner>\n        <req:Timestamp>{{timestamp}}</req:Timestamp>\n      </req:Header>\n      <req:Body>\n        <req:Identity>\n          <req:Initiator>\n            <req:IdentifierType>{{CPS_INITIATOR_IDENTIFIER_TYPE}}</req:IdentifierType>\n            <req:Identifier>{{CPS_INITIATOR_IDENTIFIER}}</req:Identifier>\n            <req:SecurityCredential>{{CPS_INITIATOR_SECURITY_CREDENTIAL}}</req:SecurityCredential>\n          </req:Initiator>\n        </req:Identity>\n        <req:CreateTopOrgRequest>\n          <req:ShortCode>{{shortCode}}</req:ShortCode>\n          <req:OrganizationName>{{organizationName}}</req:OrganizationName>\n          <req:TrustLevel>{{CPS_TRUST_LEVEL}}</req:TrustLevel>\n          <req:SimpleKYCUpdateData>\n            <req:AddField>\n              <com:KYCName>[KYC][Address Details][Country]</com:KYCName>\n              <com:KYCValue>{{CPS_COUNTRY_VALUE}}</com:KYCValue>\n            </req:AddField>\n            <req:AddField>\n              <com:KYCName>[KYC][Address Details][City]</com:KYCName>\n              <com:KYCValue>{{cityValue}}</com:KYCValue>\n            </req:AddField>\n            <req:AddField>\n              <com:KYCName>[KYC][Corporate Information][NIF]</com:KYCName>\n              <com:KYCValue>{{nifValue}}</com:KYCValue>\n            </req:AddField>\n            <req:AddField>\n              <com:KYCName>[KYC][Corporate Information][Commercial Register]</com:KYCName>\n              <com:KYCValue>{{commercialRegisterValue}}</com:KYCValue>\n            </req:AddField>\n            <req:AddField>\n              <com:KYCName>[KYC][Organization Type][Organization Type]</com:KYCName>\n              <com:KYCValue>{{CPS_ORG_TYPE_VALUE}}</com:KYCValue>\n            </req:AddField>\n            <req:AddField>\n              <com:KYCName>[KYC][Organization Contact Details][Contact Type]</com:KYCName>\n              <com:KYCValue>{{CPS_CONTACT_TYPE_VALUE}}</com:KYCValue>\n            </req:AddField>\n            <req:AddField>\n              <com:KYCName>[KYC][Organization Contact Details][Contact First Name]</com:KYCName>\n              <com:KYCValue>{{contactFirstNameValue}}</com:KYCValue>\n            </req:AddField>\n            <req:AddField>\n              <com:KYCName>[KYC][Contact Details][Preferred Notification Channel]</com:KYCName>\n              <com:KYCValue>{{CPS_PREFERRED_CHANNEL}}</com:KYCValue>\n            </req:AddField>\n            <req:AddField>\n              <com:KYCName>[KYC][Contact Details][Notification Receiving MSISDN]</com:KYCName>\n              <com:KYCValue>{{merchantMsisdn}}</com:KYCValue>\n            </req:AddField>\n            <req:AddField>\n              <com:KYCName>[KYC][Contact Details][Preferred Notification Language]</com:KYCName>\n              <com:KYCValue>{{CPS_PREFERRED_LANG}}</com:KYCValue>\n            </req:AddField>\n          </req:SimpleKYCUpdateData>\n          <req:UpdateProductsData>\n            <req:AddProduct>\n              <req:ProductID>{{CPS_PRODUCT_ID}}</req:ProductID>\n            </req:AddProduct>\n          </req:UpdateProductsData>\n        </req:CreateTopOrgRequest>\n      </req:Body>\n    </api:Request>\n  </soapenv:Body>\n</soapenv:Envelope>",
+          "options": { "raw": { "language": "xml" } }
+        },
+        "url": "{{CPS_URL}}",
+        "description": "Équivalent de `cpsCreateTopOrg` / `buildCreateTopOrgXml`.\n\nMapping backend :\n- shortCode ← merchant.shortCode\n- organizationName ← merchant.nom\n- merchantMsisdn ← merchant.contact\n- cityValue ← merchant.ville\n- nifValue ← merchant.nif\n- commercialRegisterValue ← merchant.rc\n- contactFirstNameValue ← merchant.prenomGerant\n\nAvant envoi : mets `timestamp` au format `yyyyMMddHHmmss` et `originatorConversationId` = `S_` + timestamp."
+      },
+      "response": []
+    },
+    {
+      "name": "2. CreateOrgOperator (avec MSISDN / HANDSET)",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "text/xml; charset=utf-8" },
+          { "key": "Accept", "value": "text/xml" },
+          { "key": "SOAPAction", "value": "CreateOrgOperator" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:api=\"http://cps.huawei.com/synccpsinterface/api_requestmgr\" xmlns:req=\"http://cps.huawei.com/synccpsinterface/request\" xmlns:com=\"http://cps.huawei.com/synccpsinterface/common\" xmlns:cus=\"http://cps.huawei.com/cpsinterface/customizedrequest\">\n  <soapenv:Header/>\n  <soapenv:Body>\n    <api:Request>\n      <req:Header>\n        <req:Version>1.0</req:Version>\n        <req:CommandID>CreateOrgOperator</req:CommandID>\n        <req:OriginatorConversationID>{{originatorConversationId}}</req:OriginatorConversationID>\n        <req:Caller>\n          <req:CallerType>{{CPS_CALLER_TYPE}}</req:CallerType>\n          <req:ThirdPartyID>{{CPS_THIRD_PARTY_ID}}</req:ThirdPartyID>\n          <req:Password>{{CPS_PASSWORD}}</req:Password>\n          <req:ResultURL>{{CPS_RESULT_URL}}</req:ResultURL>\n        </req:Caller>\n        <req:KeyOwner>{{CPS_KEY_OWNER}}</req:KeyOwner>\n        <req:Timestamp>{{timestamp}}</req:Timestamp>\n      </req:Header>\n      <req:Body>\n        <req:Identity>\n          <req:Initiator>\n            <req:IdentifierType>{{CPS_INITIATOR_IDENTIFIER_TYPE}}</req:IdentifierType>\n            <req:Identifier>{{CPS_INITIATOR_IDENTIFIER}}</req:Identifier>\n            <req:SecurityCredential>{{CPS_INITIATOR_SECURITY_CREDENTIAL}}</req:SecurityCredential>\n          </req:Initiator>\n        </req:Identity>\n        <req:CreateOrgOperatorRequest>\n          <req:ShortCode>{{shortCode}}</req:ShortCode>\n          <req:LanguageCode>{{CPS_OPERATOR_LANGUAGE_CODE}}</req:LanguageCode>\n          <req:RoleUpdateData>\n            <req:RoleItem>\n              <req:RoleID>{{CPS_OPERATOR_ROLE_ID}}</req:RoleID>\n              <req:EffectiveDate>{{CPS_OPERATOR_ROLE_EFFECTIVE_DATE}}</req:EffectiveDate>\n              <req:ExpiryDate>{{CPS_OPERATOR_ROLE_EXPIRY_DATE}}</req:ExpiryDate>\n            </req:RoleItem>\n          </req:RoleUpdateData>\n          <req:AuthenticationTypeData>\n            <com:AuthenticationItem>\n              <com:AuthenticationType>{{CPS_OPERATOR_AUTH_TYPE}}</com:AuthenticationType>\n              <com:UserName>{{CPS_OPERATOR_USERNAME}}</com:UserName>\n              <com:OperatorID>{{operatorId}}</com:OperatorID>\n              <com:MSISDN>{{operatorMsisdn}}</com:MSISDN>\n            </com:AuthenticationItem>\n          </req:AuthenticationTypeData>\n          <req:SimpleKYCUpdateData>\n            <req:AddField>\n              <com:KYCName>[KYC][Personal Details][First Name]</com:KYCName>\n              <com:KYCValue>{{operatorFirstName}}</com:KYCValue>\n            </req:AddField>\n            <req:AddField>\n              <com:KYCName>[KYC][Contact Details][Preferred Notification Channel]</com:KYCName>\n              <com:KYCValue>{{CPS_PREFERRED_CHANNEL}}</com:KYCValue>\n            </req:AddField>\n            <req:AddField>\n              <com:KYCName>[KYC][Contact Details][Notification Receiving MSISDN]</com:KYCName>\n              <com:KYCValue>{{operatorMsisdn}}</com:KYCValue>\n            </req:AddField>\n          </req:SimpleKYCUpdateData>\n          <req:UpdateIDDetails>\n            <req:AddIDRecord>\n              <com:IDTypeValue>{{CPS_OPERATOR_ID_TYPE}}</com:IDTypeValue>\n              <com:IDNumber>{{operatorNni}}</com:IDNumber>\n              <com:DocumentReceived>{{CPS_OPERATOR_DOCUMENT_RECEIVED}}</com:DocumentReceived>\n            </req:AddIDRecord>\n          </req:UpdateIDDetails>\n        </req:CreateOrgOperatorRequest>\n      </req:Body>\n    </api:Request>\n  </soapenv:Body>\n</soapenv:Envelope>",
+          "options": { "raw": { "language": "xml" } }
+        },
+        "url": "{{CPS_URL}}",
+        "description": "Équivalent de `cpsCreateOrgOperator` / `buildCreateOrgOperatorXml` (cas standard avec MSISDN).\n\nMapping backend :\n- shortCode ← merchant.shortCode\n- operatorId / operatorMsisdn ← op.telephone\n- operatorFirstName ← op.prenom\n- operatorNni ← op.nni (numérique)\n- AuthenticationType : `HANDSET` → `02` dans le backend\n\n`EffectiveDate` doit être ≥ aujourd'hui (yyyyMMdd)."
+      },
+      "response": []
+    },
+    {
+      "name": "3. CreateOrgOperator (sans MSISDN / WEB)",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "text/xml; charset=utf-8" },
+          { "key": "Accept", "value": "text/xml" },
+          { "key": "SOAPAction", "value": "CreateOrgOperator" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:api=\"http://cps.huawei.com/synccpsinterface/api_requestmgr\" xmlns:req=\"http://cps.huawei.com/synccpsinterface/request\" xmlns:com=\"http://cps.huawei.com/synccpsinterface/common\" xmlns:cus=\"http://cps.huawei.com/cpsinterface/customizedrequest\">\n  <soapenv:Header/>\n  <soapenv:Body>\n    <api:Request>\n      <req:Header>\n        <req:Version>1.0</req:Version>\n        <req:CommandID>CreateOrgOperator</req:CommandID>\n        <req:OriginatorConversationID>{{originatorConversationId}}</req:OriginatorConversationID>\n        <req:Caller>\n          <req:CallerType>{{CPS_CALLER_TYPE}}</req:CallerType>\n          <req:ThirdPartyID>{{CPS_THIRD_PARTY_ID}}</req:ThirdPartyID>\n          <req:Password>{{CPS_PASSWORD}}</req:Password>\n          <req:ResultURL>{{CPS_RESULT_URL}}</req:ResultURL>\n        </req:Caller>\n        <req:KeyOwner>{{CPS_KEY_OWNER}}</req:KeyOwner>\n        <req:Timestamp>{{timestamp}}</req:Timestamp>\n      </req:Header>\n      <req:Body>\n        <req:Identity>\n          <req:Initiator>\n            <req:IdentifierType>{{CPS_INITIATOR_IDENTIFIER_TYPE}}</req:IdentifierType>\n            <req:Identifier>{{CPS_INITIATOR_IDENTIFIER}}</req:Identifier>\n            <req:SecurityCredential>{{CPS_INITIATOR_SECURITY_CREDENTIAL}}</req:SecurityCredential>\n          </req:Initiator>\n        </req:Identity>\n        <req:CreateOrgOperatorRequest>\n          <req:ShortCode>{{shortCode}}</req:ShortCode>\n          <req:LanguageCode>{{CPS_OPERATOR_LANGUAGE_CODE}}</req:LanguageCode>\n          <req:RoleUpdateData>\n            <req:RoleItem>\n              <req:RoleID>{{CPS_OPERATOR_ROLE_ID}}</req:RoleID>\n              <req:EffectiveDate>{{CPS_OPERATOR_ROLE_EFFECTIVE_DATE}}</req:EffectiveDate>\n              <req:ExpiryDate>{{CPS_OPERATOR_ROLE_EXPIRY_DATE}}</req:ExpiryDate>\n            </req:RoleItem>\n          </req:RoleUpdateData>\n          <req:AuthenticationTypeData>\n            <com:AuthenticationItem>\n              <com:AuthenticationType>01</com:AuthenticationType>\n              <com:UserName>{{operatorId}}</com:UserName>\n              <com:OperatorID>{{operatorId}}</com:OperatorID>\n            </com:AuthenticationItem>\n          </req:AuthenticationTypeData>\n          <req:SimpleKYCUpdateData>\n            <req:AddField>\n              <com:KYCName>[KYC][Personal Details][First Name]</com:KYCName>\n              <com:KYCValue>{{operatorFirstName}}</com:KYCValue>\n            </req:AddField>\n            <req:AddField>\n              <com:KYCName>[KYC][Contact Details][Preferred Notification Channel]</com:KYCName>\n              <com:KYCValue>{{CPS_PREFERRED_CHANNEL}}</com:KYCValue>\n            </req:AddField>\n            <req:AddField>\n              <com:KYCName>[KYC][Contact Details][Notification Receiving MSISDN]</com:KYCName>\n              <com:KYCValue>{{operatorMsisdn}}</com:KYCValue>\n            </req:AddField>\n          </req:SimpleKYCUpdateData>\n          <req:UpdateIDDetails>\n            <req:AddIDRecord>\n              <com:IDTypeValue>{{CPS_OPERATOR_ID_TYPE}}</com:IDTypeValue>\n              <com:IDNumber>{{operatorNni}}</com:IDNumber>\n              <com:DocumentReceived>{{CPS_OPERATOR_DOCUMENT_RECEIVED}}</com:DocumentReceived>\n            </req:AddIDRecord>\n          </req:UpdateIDDetails>\n        </req:CreateOrgOperatorRequest>\n      </req:Body>\n    </api:Request>\n  </soapenv:Body>\n</soapenv:Envelope>",
+          "options": { "raw": { "language": "xml" } }
+        },
+        "url": "{{CPS_URL}}",
+        "description": "Variante backend quand `CPS_OPERATOR_INCLUDE_MSISDN=0` ou MSISDN déjà client Moov : pas de balise `<com:MSISDN>`, authType alternatif (`01` / WEB), UserName = OperatorID."
+      },
+      "response": []
+    }
+  ]
+}

@@ -1,0 +1,557 @@
+{
+	"info": {
+		"_postman_id": "f90eddce-89d5-41fa-9307-c03313d8634e",
+		"name": "Moov Money Internal API(Testbed)",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Merchant Commission",
+			"item": [
+				{
+					"name": "StandardPrevalidation",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:api=\"http://cps.huawei.com/synccpsinterface/api_requestmgr\" xmlns:req=\"http://cps.huawei.com/synccpsinterface/request\" xmlns:com=\"http://cps.huawei.com/synccpsinterface/common\" xmlns:cus=\"http://cps.huawei.com/cpsinterface/customizedrequest\">\r\n    <soapenv:Header/>\r\n    <soapenv:Body>\r\n        <api:Request>\r\n            <req:Header>\r\n                <req:Version>1.0</req:Version>\r\n                <req:CommandID>StandardPrevalidation</req:CommandID>\r\n                <req:OriginatorConversationID>S_X20250624115311</req:OriginatorConversationID>\r\n                <req:Caller>\r\n                    <req:CallerType>2</req:CallerType>\r\n                    <req:ThirdPartyID>Moov</req:ThirdPartyID>\r\n                    <req:Password>poQIYI6iouXhNiQp7Rs2AmqJuawq53BgJtLimBCbiFsZVXkZUKUFkbx/q0h9431ACGqVf8SqOpguFk+Bilf2e0gKOQQThUPPIz8vOyppsa9qs1Ly8p93xBuqm/k6Z5/nv1Q20bbqIwmuoSsv83a4TkCNFXSK0pnG6+U+SNyI2EfH9Mou91ryePMODoGEUelHHjEZHe/4dQMOE7xUiGb3AqT605GIvZzGeDeeSYEmBD11RRByHJzyGYjG6IyES3++7xoJpeaLp74eqS96FOIXD+zsL+LQYUJ4ddDpqp6OAcfFq+eI411V0SjiTte0gU0PahuMwUzOovsLO2P226LnJumTpg06FbeCFPf9AM7g0JXHe+uGDcWoXXDuz9naCNBfIzdj8Y8fJy/gpSSXhwTxlQoZkEAGVEqvDfuvYjq0FrjmC+US5t7xr2joF4Uyz2xVT9+bRLay4ZC2kgujUOiSVtdZb1tYLz+PMxTBSqM65LBMA/pLmwm+oL1hXiOxyV8hOSOACd6NwCFNr7nbfTCgXVrK0hHNSabcV55mca+7v7e3W/AS2uHRHq0CrohRA6jvlfoxPnFEB/JVFgXlJL/INLPCa4jvIUXlV27WwfUu7lapr3HhK3UqfJr/I/r2fAJJFjVVgMoyDiUMrr/etKyKnbot/4T4/LromVGXzjx0uCg=</req:Password>\r\n                </req:Caller>\r\n                <req:KeyOwner>1</req:KeyOwner>\r\n                <req:Timestamp>20250624115311</req:Timestamp>\r\n            </req:Header>\r\n            <req:Body>\r\n                <req:Identity>\r\n                    <req:Initiator>\r\n                  <req:IdentifierType>14</req:IdentifierType>\r\n                  <req:Identifier>Moov</req:Identifier>\r\n                  <req:SecurityCredential>poQIYI6iouXhNiQp7Rs2AmqJuawq53BgJtLimBCbiFsZVXkZUKUFkbx/q0h9431ACGqVf8SqOpguFk+Bilf2e0gKOQQThUPPIz8vOyppsa9qs1Ly8p93xBuqm/k6Z5/nv1Q20bbqIwmuoSsv83a4TkCNFXSK0pnG6+U+SNyI2EfH9Mou91ryePMODoGEUelHHjEZHe/4dQMOE7xUiGb3AqT605GIvZzGeDeeSYEmBD11RRByHJzyGYjG6IyES3++7xoJpeaLp74eqS96FOIXD+zsL+LQYUJ4ddDpqp6OAcfFq+eI411V0SjiTte0gU0PahuMwUzOovsLO2P226LnJumTpg06FbeCFPf9AM7g0JXHe+uGDcWoXXDuz9naCNBfIzdj8Y8fJy/gpSSXhwTxlQoZkEAGVEqvDfuvYjq0FrjmC+US5t7xr2joF4Uyz2xVT9+bRLay4ZC2kgujUOiSVtdZb1tYLz+PMxTBSqM65LBMA/pLmwm+oL1hXiOxyV8hOSOACd6NwCFNr7nbfTCgXVrK0hHNSabcV55mca+7v7e3W/AS2uHRHq0CrohRA6jvlfoxPnFEB/JVFgXlJL/INLPCa4jvIUXlV27WwfUu7lapr3HhK3UqfJr/I/r2fAJJFjVVgMoyDiUMrr/etKyKnbot/4T4/LromVGXzjx0uCg=</req:SecurityCredential>\r\n               </req:Initiator>\r\n                    <req:PrimaryParty>\r\n                        <req:IdentifierType>4</req:IdentifierType>\r\n                        <req:Identifier>1234</req:Identifier>\r\n                    </req:PrimaryParty>\r\n                    <req:ReceiverParty>\r\n                        <req:IdentifierType>1</req:IdentifierType>\r\n                        <req:Identifier>2228042004</req:Identifier>\r\n                    </req:ReceiverParty>\r\n                </req:Identity>\r\n                <req:StandardPrevalidationRequest>\r\n                    <req:RequestContext>\r\n                        <req:Parameter>\r\n                            <com:key>Service</com:key>\r\n                            <com:value>Promotional Commission</com:value>\r\n                        </req:Parameter>\r\n                        <req:Parameter>\r\n                            <com:key>Currency</com:key>\r\n                            <com:value>MRU</com:value>\r\n                        </req:Parameter>\r\n                        <req:Parameter>\r\n                            <com:key>Amount</com:key>\r\n                            <com:value>20</com:value>\r\n                        </req:Parameter>\r\n                        <req:Parameter>\r\n                            <com:key>PrevalidationType</com:key>\r\n                            <com:value>1</com:value>\r\n                        </req:Parameter>\r\n                    </req:RequestContext>\r\n                </req:StandardPrevalidationRequest>\r\n                <req:Remark>1212</req:Remark>\r\n            </req:Body>\r\n        </api:Request>\r\n    </soapenv:Body>\r\n</soapenv:Envelope>",
+							"options": {
+								"raw": {
+									"language": "text"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://41.188.122.234:30001/payment/services/SYNCAPIRequestMgrService",
+							"protocol": "http",
+							"host": [
+								"41",
+								"188",
+								"122",
+								"234"
+							],
+							"port": "30001",
+							"path": [
+								"payment",
+								"services",
+								"SYNCAPIRequestMgrService"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "StandardPrevalidation",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:api=\"http://cps.huawei.com/synccpsinterface/api_requestmgr\" xmlns:req=\"http://cps.huawei.com/synccpsinterface/request\" xmlns:com=\"http://cps.huawei.com/synccpsinterface/common\" xmlns:cus=\"http://cps.huawei.com/cpsinterface/customizedrequest\">\r\n    <soapenv:Header/>\r\n    <soapenv:Body>\r\n        <api:Request>\r\n            <req:Header>\r\n                <req:Version>1.0</req:Version>\r\n                <req:CommandID>StandardPrevalidation</req:CommandID>\r\n                <req:OriginatorConversationID>S_X20250624115311</req:OriginatorConversationID>\r\n                <req:Caller>\r\n                    <req:CallerType>2</req:CallerType>\r\n                    <req:ThirdPartyID>Moov</req:ThirdPartyID>\r\n                    <req:Password>poQIYI6iouXhNiQp7Rs2AmqJuawq53BgJtLimBCbiFsZVXkZUKUFkbx/q0h9431ACGqVf8SqOpguFk+Bilf2e0gKOQQThUPPIz8vOyppsa9qs1Ly8p93xBuqm/k6Z5/nv1Q20bbqIwmuoSsv83a4TkCNFXSK0pnG6+U+SNyI2EfH9Mou91ryePMODoGEUelHHjEZHe/4dQMOE7xUiGb3AqT605GIvZzGeDeeSYEmBD11RRByHJzyGYjG6IyES3++7xoJpeaLp74eqS96FOIXD+zsL+LQYUJ4ddDpqp6OAcfFq+eI411V0SjiTte0gU0PahuMwUzOovsLO2P226LnJumTpg06FbeCFPf9AM7g0JXHe+uGDcWoXXDuz9naCNBfIzdj8Y8fJy/gpSSXhwTxlQoZkEAGVEqvDfuvYjq0FrjmC+US5t7xr2joF4Uyz2xVT9+bRLay4ZC2kgujUOiSVtdZb1tYLz+PMxTBSqM65LBMA/pLmwm+oL1hXiOxyV8hOSOACd6NwCFNr7nbfTCgXVrK0hHNSabcV55mca+7v7e3W/AS2uHRHq0CrohRA6jvlfoxPnFEB/JVFgXlJL/INLPCa4jvIUXlV27WwfUu7lapr3HhK3UqfJr/I/r2fAJJFjVVgMoyDiUMrr/etKyKnbot/4T4/LromVGXzjx0uCg=</req:Password>\r\n                </req:Caller>\r\n                <req:KeyOwner>1</req:KeyOwner>\r\n                <req:Timestamp>20250624115311</req:Timestamp>\r\n            </req:Header>\r\n            <req:Body>\r\n                <req:Identity>\r\n                    <req:Initiator>\r\n                  <req:IdentifierType>14</req:IdentifierType>\r\n                  <req:Identifier>Moov</req:Identifier>\r\n                  <req:SecurityCredential>poQIYI6iouXhNiQp7Rs2AmqJuawq53BgJtLimBCbiFsZVXkZUKUFkbx/q0h9431ACGqVf8SqOpguFk+Bilf2e0gKOQQThUPPIz8vOyppsa9qs1Ly8p93xBuqm/k6Z5/nv1Q20bbqIwmuoSsv83a4TkCNFXSK0pnG6+U+SNyI2EfH9Mou91ryePMODoGEUelHHjEZHe/4dQMOE7xUiGb3AqT605GIvZzGeDeeSYEmBD11RRByHJzyGYjG6IyES3++7xoJpeaLp74eqS96FOIXD+zsL+LQYUJ4ddDpqp6OAcfFq+eI411V0SjiTte0gU0PahuMwUzOovsLO2P226LnJumTpg06FbeCFPf9AM7g0JXHe+uGDcWoXXDuz9naCNBfIzdj8Y8fJy/gpSSXhwTxlQoZkEAGVEqvDfuvYjq0FrjmC+US5t7xr2joF4Uyz2xVT9+bRLay4ZC2kgujUOiSVtdZb1tYLz+PMxTBSqM65LBMA/pLmwm+oL1hXiOxyV8hOSOACd6NwCFNr7nbfTCgXVrK0hHNSabcV55mca+7v7e3W/AS2uHRHq0CrohRA6jvlfoxPnFEB/JVFgXlJL/INLPCa4jvIUXlV27WwfUu7lapr3HhK3UqfJr/I/r2fAJJFjVVgMoyDiUMrr/etKyKnbot/4T4/LromVGXzjx0uCg=</req:SecurityCredential>\r\n               </req:Initiator>\r\n                    <req:PrimaryParty>\r\n                        <req:IdentifierType>4</req:IdentifierType>\r\n                        <req:Identifier>1234</req:Identifier>\r\n                    </req:PrimaryParty>\r\n                    <req:ReceiverParty>\r\n                        <req:IdentifierType>1</req:IdentifierType>\r\n                        <req:Identifier>22224082004</req:Identifier>\r\n                    </req:ReceiverParty>\r\n                </req:Identity>\r\n                <req:StandardPrevalidationRequest>\r\n                    <req:RequestContext>\r\n                        <req:Parameter>\r\n                            <com:key>Service</com:key>\r\n                            <com:value>Promotional Commission</com:value>\r\n                        </req:Parameter>\r\n                        <req:Parameter>\r\n                            <com:key>Currency</com:key>\r\n                            <com:value>MRU</com:value>\r\n                        </req:Parameter>\r\n                        <req:Parameter>\r\n                            <com:key>Amount</com:key>\r\n                            <com:value>20</com:value>\r\n                        </req:Parameter>\r\n                        <req:Parameter>\r\n                            <com:key>PrevalidationType</com:key>\r\n                            <com:value>1</com:value>\r\n                        </req:Parameter>\r\n                    </req:RequestContext>\r\n                </req:StandardPrevalidationRequest>\r\n                <req:Remark>1212</req:Remark>\r\n            </req:Body>\r\n        </api:Request>\r\n    </soapenv:Body>\r\n</soapenv:Envelope>",
+									"options": {
+										"raw": {
+											"language": "text"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://41.188.122.234:30001/payment/services/SYNCAPIRequestMgrService",
+									"protocol": "http",
+									"host": [
+										"41",
+										"188",
+										"122",
+										"234"
+									],
+									"port": "30001",
+									"path": [
+										"payment",
+										"services",
+										"SYNCAPIRequestMgrService"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "xml",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nslb"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 07 Aug 2026 15:46:22 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/xml;charset=UTF-8"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "AG_30002=1EA8B7101A8084CE34A560C876C2F42728C3AD520D340955; Path=/payment; Secure; HttpOnly"
+								}
+							],
+							"cookie": [],
+							"body": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\">\n    <soapenv:Body>\n        <api:Result xmlns:api=\"http://cps.huawei.com/synccpsinterface/api_requestmgr\" xmlns:res=\"http://cps.huawei.com/synccpsinterface/result\" xmlns:com=\"http://cps.huawei.com/synccpsinterface/common\">\n            <res:Header>\n                <res:Version>1.0</res:Version>\n                <res:OriginatorConversationID>S_X20250624115311</res:OriginatorConversationID>\n                <res:ConversationID>AG_20260807_7010fdadcdfhR000DE1T</res:ConversationID>\n            </res:Header>\n            <res:Body>\n                <res:ResultType>0</res:ResultType>\n                <res:ResultCode>0</res:ResultCode>\n                <res:ResultDesc>Process service request successfully.</res:ResultDesc>\n                <res:StandardPrevalidationResult>\n                    <res:ResultParameters>\n                        <res:ResultParameter>\n                            <com:Key>TransactionType</com:Key>\n                            <com:Value>24011</com:Value>\n                        </res:ResultParameter>\n                        <res:ResultParameter>\n                            <com:Key>ReasonType</com:Key>\n                            <com:Value>25585</com:Value>\n                        </res:ResultParameter>\n                        <res:ResultParameter>\n                            <com:Key>TotalChargeAmount</com:Key>\n                            <com:Value/>\n                        </res:ResultParameter>\n                        <res:ResultParameter>\n                            <com:Key>TotalTaxAmount</com:Key>\n                            <com:Value/>\n                        </res:ResultParameter>\n                        <res:ResultParameter>\n                            <com:Key>TotalCommissionAmount</com:Key>\n                            <com:Value/>\n                        </res:ResultParameter>\n                    </res:ResultParameters>\n                    <res:DebitPartyInfo>\n                        <res:IdentityBrief>\n                            <res:IdentityId>201000000000038001</res:IdentityId>\n                            <res:IdentityType>5000</res:IdentityType>\n                        </res:IdentityBrief>\n                        <res:AccountNo>500000000110261020</res:AccountNo>\n                        <res:AccountTypeId>22001</res:AccountTypeId>\n                        <res:PublicName>1234 - Test</res:PublicName>\n                    </res:DebitPartyInfo>\n                    <res:CreditPartyInfo>\n                        <res:IdentityBrief>\n                            <res:IdentityId>202000000000045041</res:IdentityId>\n                            <res:IdentityType>1000</res:IdentityType>\n                        </res:IdentityBrief>\n                        <res:AccountNo>100000000110391685</res:AccountNo>\n                        <res:AccountTypeId>22000</res:AccountTypeId>\n                        <res:PublicName>22224082004 - test12 LL test</res:PublicName>\n                    </res:CreditPartyInfo>\n                    <res:ODPrevalidationInfo/>\n                </res:StandardPrevalidationResult>\n            </res:Body>\n        </api:Result>\n    </soapenv:Body>\n</soapenv:Envelope>"
+						},
+						{
+							"name": "StandardPrevalidation",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:api=\"http://cps.huawei.com/synccpsinterface/api_requestmgr\" xmlns:req=\"http://cps.huawei.com/synccpsinterface/request\" xmlns:com=\"http://cps.huawei.com/synccpsinterface/common\" xmlns:cus=\"http://cps.huawei.com/cpsinterface/customizedrequest\">\r\n    <soapenv:Header/>\r\n    <soapenv:Body>\r\n        <api:Request>\r\n            <req:Header>\r\n                <req:Version>1.0</req:Version>\r\n                <req:CommandID>StandardPrevalidation</req:CommandID>\r\n                <req:OriginatorConversationID>S_X20250624115311</req:OriginatorConversationID>\r\n                <req:Caller>\r\n                    <req:CallerType>2</req:CallerType>\r\n                    <req:ThirdPartyID>Moov</req:ThirdPartyID>\r\n                    <req:Password>poQIYI6iouXhNiQp7Rs2AmqJuawq53BgJtLimBCbiFsZVXkZUKUFkbx/q0h9431ACGqVf8SqOpguFk+Bilf2e0gKOQQThUPPIz8vOyppsa9qs1Ly8p93xBuqm/k6Z5/nv1Q20bbqIwmuoSsv83a4TkCNFXSK0pnG6+U+SNyI2EfH9Mou91ryePMODoGEUelHHjEZHe/4dQMOE7xUiGb3AqT605GIvZzGeDeeSYEmBD11RRByHJzyGYjG6IyES3++7xoJpeaLp74eqS96FOIXD+zsL+LQYUJ4ddDpqp6OAcfFq+eI411V0SjiTte0gU0PahuMwUzOovsLO2P226LnJumTpg06FbeCFPf9AM7g0JXHe+uGDcWoXXDuz9naCNBfIzdj8Y8fJy/gpSSXhwTxlQoZkEAGVEqvDfuvYjq0FrjmC+US5t7xr2joF4Uyz2xVT9+bRLay4ZC2kgujUOiSVtdZb1tYLz+PMxTBSqM65LBMA/pLmwm+oL1hXiOxyV8hOSOACd6NwCFNr7nbfTCgXVrK0hHNSabcV55mca+7v7e3W/AS2uHRHq0CrohRA6jvlfoxPnFEB/JVFgXlJL/INLPCa4jvIUXlV27WwfUu7lapr3HhK3UqfJr/I/r2fAJJFjVVgMoyDiUMrr/etKyKnbot/4T4/LromVGXzjx0uCg=</req:Password>\r\n                </req:Caller>\r\n                <req:KeyOwner>1</req:KeyOwner>\r\n                <req:Timestamp>20250624115311</req:Timestamp>\r\n            </req:Header>\r\n            <req:Body>\r\n                <req:Identity>\r\n                    <req:Initiator>\r\n                  <req:IdentifierType>14</req:IdentifierType>\r\n                  <req:Identifier>Moov</req:Identifier>\r\n                  <req:SecurityCredential>poQIYI6iouXhNiQp7Rs2AmqJuawq53BgJtLimBCbiFsZVXkZUKUFkbx/q0h9431ACGqVf8SqOpguFk+Bilf2e0gKOQQThUPPIz8vOyppsa9qs1Ly8p93xBuqm/k6Z5/nv1Q20bbqIwmuoSsv83a4TkCNFXSK0pnG6+U+SNyI2EfH9Mou91ryePMODoGEUelHHjEZHe/4dQMOE7xUiGb3AqT605GIvZzGeDeeSYEmBD11RRByHJzyGYjG6IyES3++7xoJpeaLp74eqS96FOIXD+zsL+LQYUJ4ddDpqp6OAcfFq+eI411V0SjiTte0gU0PahuMwUzOovsLO2P226LnJumTpg06FbeCFPf9AM7g0JXHe+uGDcWoXXDuz9naCNBfIzdj8Y8fJy/gpSSXhwTxlQoZkEAGVEqvDfuvYjq0FrjmC+US5t7xr2joF4Uyz2xVT9+bRLay4ZC2kgujUOiSVtdZb1tYLz+PMxTBSqM65LBMA/pLmwm+oL1hXiOxyV8hOSOACd6NwCFNr7nbfTCgXVrK0hHNSabcV55mca+7v7e3W/AS2uHRHq0CrohRA6jvlfoxPnFEB/JVFgXlJL/INLPCa4jvIUXlV27WwfUu7lapr3HhK3UqfJr/I/r2fAJJFjVVgMoyDiUMrr/etKyKnbot/4T4/LromVGXzjx0uCg=</req:SecurityCredential>\r\n               </req:Initiator>\r\n                    <req:PrimaryParty>\r\n                        <req:IdentifierType>4</req:IdentifierType>\r\n                        <req:Identifier>900001</req:Identifier>\r\n                    </req:PrimaryParty>\r\n                    <req:ReceiverParty>\r\n                        <req:IdentifierType>1</req:IdentifierType>\r\n                        <req:Identifier>22224082004</req:Identifier>\r\n                    </req:ReceiverParty>\r\n                </req:Identity>\r\n                <req:StandardPrevalidationRequest>\r\n                    <req:RequestContext>\r\n                        <req:Parameter>\r\n                            <com:key>Service</com:key>\r\n                            <com:value>Promotional Commission</com:value>\r\n                        </req:Parameter>\r\n                        <req:Parameter>\r\n                            <com:key>Currency</com:key>\r\n                            <com:value>MRU</com:value>\r\n                        </req:Parameter>\r\n                        <req:Parameter>\r\n                            <com:key>Amount</com:key>\r\n                            <com:value>20</com:value>\r\n                        </req:Parameter>\r\n                        <req:Parameter>\r\n                            <com:key>PrevalidationType</com:key>\r\n                            <com:value>1</com:value>\r\n                        </req:Parameter>\r\n                    </req:RequestContext>\r\n                </req:StandardPrevalidationRequest>\r\n                <req:Remark>1212</req:Remark>\r\n            </req:Body>\r\n        </api:Request>\r\n    </soapenv:Body>\r\n</soapenv:Envelope>",
+									"options": {
+										"raw": {
+											"language": "text"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://41.188.122.234:30001/payment/services/SYNCAPIRequestMgrService",
+									"protocol": "http",
+									"host": [
+										"41",
+										"188",
+										"122",
+										"234"
+									],
+									"port": "30001",
+									"path": [
+										"payment",
+										"services",
+										"SYNCAPIRequestMgrService"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "xml",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nslb"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 07 Aug 2026 15:46:13 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/xml;charset=UTF-8"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "AG_30002=A82C8EDE7ED8D09BBBAD274EC99871A5FB7359CC24221D94; Path=/payment; Secure; HttpOnly"
+								}
+							],
+							"cookie": [],
+							"body": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\">\n    <soapenv:Body>\n        <api:Result xmlns:api=\"http://cps.huawei.com/synccpsinterface/api_requestmgr\" xmlns:res=\"http://cps.huawei.com/synccpsinterface/result\">\n            <res:Header>\n                <res:Version>1.0</res:Version>\n                <res:OriginatorConversationID>S_X20250624115311</res:OriginatorConversationID>\n                <res:ConversationID>AG_20260807_70180697fd5hJ000DE1E</res:ConversationID>\n            </res:Header>\n            <res:Body>\n                <res:ResultType>0</res:ResultType>\n                <res:ResultCode>3009</res:ResultCode>\n                <res:ResultDesc>The identity has not subscribed to the related product or service, or the identity repeatedly subscribes to products or services.</res:ResultDesc>\n            </res:Body>\n        </api:Result>\n    </soapenv:Body>\n</soapenv:Envelope>"
+						},
+						{
+							"name": "StandardPrevalidation- Not register customer",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:api=\"http://cps.huawei.com/synccpsinterface/api_requestmgr\" xmlns:req=\"http://cps.huawei.com/synccpsinterface/request\" xmlns:com=\"http://cps.huawei.com/synccpsinterface/common\" xmlns:cus=\"http://cps.huawei.com/cpsinterface/customizedrequest\">\r\n    <soapenv:Header/>\r\n    <soapenv:Body>\r\n        <api:Request>\r\n            <req:Header>\r\n                <req:Version>1.0</req:Version>\r\n                <req:CommandID>StandardPrevalidation</req:CommandID>\r\n                <req:OriginatorConversationID>S_X20250624115311</req:OriginatorConversationID>\r\n                <req:Caller>\r\n                    <req:CallerType>2</req:CallerType>\r\n                    <req:ThirdPartyID>Moov</req:ThirdPartyID>\r\n                    <req:Password>poQIYI6iouXhNiQp7Rs2AmqJuawq53BgJtLimBCbiFsZVXkZUKUFkbx/q0h9431ACGqVf8SqOpguFk+Bilf2e0gKOQQThUPPIz8vOyppsa9qs1Ly8p93xBuqm/k6Z5/nv1Q20bbqIwmuoSsv83a4TkCNFXSK0pnG6+U+SNyI2EfH9Mou91ryePMODoGEUelHHjEZHe/4dQMOE7xUiGb3AqT605GIvZzGeDeeSYEmBD11RRByHJzyGYjG6IyES3++7xoJpeaLp74eqS96FOIXD+zsL+LQYUJ4ddDpqp6OAcfFq+eI411V0SjiTte0gU0PahuMwUzOovsLO2P226LnJumTpg06FbeCFPf9AM7g0JXHe+uGDcWoXXDuz9naCNBfIzdj8Y8fJy/gpSSXhwTxlQoZkEAGVEqvDfuvYjq0FrjmC+US5t7xr2joF4Uyz2xVT9+bRLay4ZC2kgujUOiSVtdZb1tYLz+PMxTBSqM65LBMA/pLmwm+oL1hXiOxyV8hOSOACd6NwCFNr7nbfTCgXVrK0hHNSabcV55mca+7v7e3W/AS2uHRHq0CrohRA6jvlfoxPnFEB/JVFgXlJL/INLPCa4jvIUXlV27WwfUu7lapr3HhK3UqfJr/I/r2fAJJFjVVgMoyDiUMrr/etKyKnbot/4T4/LromVGXzjx0uCg=</req:Password>\r\n                </req:Caller>\r\n                <req:KeyOwner>1</req:KeyOwner>\r\n                <req:Timestamp>20250624115311</req:Timestamp>\r\n            </req:Header>\r\n            <req:Body>\r\n                <req:Identity>\r\n                    <req:Initiator>\r\n                  <req:IdentifierType>14</req:IdentifierType>\r\n                  <req:Identifier>Moov</req:Identifier>\r\n                  <req:SecurityCredential>poQIYI6iouXhNiQp7Rs2AmqJuawq53BgJtLimBCbiFsZVXkZUKUFkbx/q0h9431ACGqVf8SqOpguFk+Bilf2e0gKOQQThUPPIz8vOyppsa9qs1Ly8p93xBuqm/k6Z5/nv1Q20bbqIwmuoSsv83a4TkCNFXSK0pnG6+U+SNyI2EfH9Mou91ryePMODoGEUelHHjEZHe/4dQMOE7xUiGb3AqT605GIvZzGeDeeSYEmBD11RRByHJzyGYjG6IyES3++7xoJpeaLp74eqS96FOIXD+zsL+LQYUJ4ddDpqp6OAcfFq+eI411V0SjiTte0gU0PahuMwUzOovsLO2P226LnJumTpg06FbeCFPf9AM7g0JXHe+uGDcWoXXDuz9naCNBfIzdj8Y8fJy/gpSSXhwTxlQoZkEAGVEqvDfuvYjq0FrjmC+US5t7xr2joF4Uyz2xVT9+bRLay4ZC2kgujUOiSVtdZb1tYLz+PMxTBSqM65LBMA/pLmwm+oL1hXiOxyV8hOSOACd6NwCFNr7nbfTCgXVrK0hHNSabcV55mca+7v7e3W/AS2uHRHq0CrohRA6jvlfoxPnFEB/JVFgXlJL/INLPCa4jvIUXlV27WwfUu7lapr3HhK3UqfJr/I/r2fAJJFjVVgMoyDiUMrr/etKyKnbot/4T4/LromVGXzjx0uCg=</req:SecurityCredential>\r\n               </req:Initiator>\r\n                    <req:PrimaryParty>\r\n                        <req:IdentifierType>4</req:IdentifierType>\r\n                        <req:Identifier>1234</req:Identifier>\r\n                    </req:PrimaryParty>\r\n                    <req:ReceiverParty>\r\n                        <req:IdentifierType>1</req:IdentifierType>\r\n                        <req:Identifier>22241341234</req:Identifier>\r\n                    </req:ReceiverParty>\r\n                </req:Identity>\r\n                <req:StandardPrevalidationRequest>\r\n                    <req:RequestContext>\r\n                        <req:Parameter>\r\n                            <com:key>Service</com:key>\r\n                            <com:value>Promotional Commission</com:value>\r\n                        </req:Parameter>\r\n                        <req:Parameter>\r\n                            <com:key>Currency</com:key>\r\n                            <com:value>MRU</com:value>\r\n                        </req:Parameter>\r\n                        <req:Parameter>\r\n                            <com:key>Amount</com:key>\r\n                            <com:value>20</com:value>\r\n                        </req:Parameter>\r\n                        <req:Parameter>\r\n                            <com:key>PrevalidationType</com:key>\r\n                            <com:value>1</com:value>\r\n                        </req:Parameter>\r\n                    </req:RequestContext>\r\n                </req:StandardPrevalidationRequest>\r\n                <req:Remark>1212</req:Remark>\r\n            </req:Body>\r\n        </api:Request>\r\n    </soapenv:Body>\r\n</soapenv:Envelope>",
+									"options": {
+										"raw": {
+											"language": "text"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://41.188.122.234:30001/payment/services/SYNCAPIRequestMgrService",
+									"protocol": "http",
+									"host": [
+										"41",
+										"188",
+										"122",
+										"234"
+									],
+									"port": "30001",
+									"path": [
+										"payment",
+										"services",
+										"SYNCAPIRequestMgrService"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "xml",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nslb"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 07 Aug 2026 15:57:58 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/xml;charset=UTF-8"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "AG_30002=4F2A9D848C7318D8EBEDDEF96A5CF40C0EA3AA008495C535; Path=/payment; Secure; HttpOnly"
+								}
+							],
+							"cookie": [],
+							"body": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\">\n    <soapenv:Body>\n        <api:Result xmlns:api=\"http://cps.huawei.com/synccpsinterface/api_requestmgr\" xmlns:res=\"http://cps.huawei.com/synccpsinterface/result\">\n            <res:Header>\n                <res:Version>1.0</res:Version>\n                <res:OriginatorConversationID>S_X20250624115311</res:OriginatorConversationID>\n                <res:ConversationID>AG_20260807_7016d87e073sf000DF0J</res:ConversationID>\n            </res:Header>\n            <res:Body>\n                <res:ResultType>0</res:ResultType>\n                <res:ResultCode>3004</res:ResultCode>\n                <res:ResultDesc>The identity does not exist or the security credential authentication fails.</res:ResultDesc>\n            </res:Body>\n        </api:Result>\n    </soapenv:Body>\n</soapenv:Envelope>"
+						},
+						{
+							"name": "StandardPrevalidation",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:api=\"http://cps.huawei.com/synccpsinterface/api_requestmgr\" xmlns:req=\"http://cps.huawei.com/synccpsinterface/request\" xmlns:com=\"http://cps.huawei.com/synccpsinterface/common\" xmlns:cus=\"http://cps.huawei.com/cpsinterface/customizedrequest\">\r\n    <soapenv:Header/>\r\n    <soapenv:Body>\r\n        <api:Request>\r\n            <req:Header>\r\n                <req:Version>1.0</req:Version>\r\n                <req:CommandID>StandardPrevalidation</req:CommandID>\r\n                <req:OriginatorConversationID>S_X20250624115311</req:OriginatorConversationID>\r\n                <req:Caller>\r\n                    <req:CallerType>2</req:CallerType>\r\n                    <req:ThirdPartyID>Moov</req:ThirdPartyID>\r\n                    <req:Password>poQIYI6iouXhNiQp7Rs2AmqJuawq53BgJtLimBCbiFsZVXkZUKUFkbx/q0h9431ACGqVf8SqOpguFk+Bilf2e0gKOQQThUPPIz8vOyppsa9qs1Ly8p93xBuqm/k6Z5/nv1Q20bbqIwmuoSsv83a4TkCNFXSK0pnG6+U+SNyI2EfH9Mou91ryePMODoGEUelHHjEZHe/4dQMOE7xUiGb3AqT605GIvZzGeDeeSYEmBD11RRByHJzyGYjG6IyES3++7xoJpeaLp74eqS96FOIXD+zsL+LQYUJ4ddDpqp6OAcfFq+eI411V0SjiTte0gU0PahuMwUzOovsLO2P226LnJumTpg06FbeCFPf9AM7g0JXHe+uGDcWoXXDuz9naCNBfIzdj8Y8fJy/gpSSXhwTxlQoZkEAGVEqvDfuvYjq0FrjmC+US5t7xr2joF4Uyz2xVT9+bRLay4ZC2kgujUOiSVtdZb1tYLz+PMxTBSqM65LBMA/pLmwm+oL1hXiOxyV8hOSOACd6NwCFNr7nbfTCgXVrK0hHNSabcV55mca+7v7e3W/AS2uHRHq0CrohRA6jvlfoxPnFEB/JVFgXlJL/INLPCa4jvIUXlV27WwfUu7lapr3HhK3UqfJr/I/r2fAJJFjVVgMoyDiUMrr/etKyKnbot/4T4/LromVGXzjx0uCg=</req:Password>\r\n                </req:Caller>\r\n                <req:KeyOwner>1</req:KeyOwner>\r\n                <req:Timestamp>20250624115311</req:Timestamp>\r\n            </req:Header>\r\n            <req:Body>\r\n                <req:Identity>\r\n                    <req:Initiator>\r\n                  <req:IdentifierType>14</req:IdentifierType>\r\n                  <req:Identifier>Moov</req:Identifier>\r\n                  <req:SecurityCredential>poQIYI6iouXhNiQp7Rs2AmqJuawq53BgJtLimBCbiFsZVXkZUKUFkbx/q0h9431ACGqVf8SqOpguFk+Bilf2e0gKOQQThUPPIz8vOyppsa9qs1Ly8p93xBuqm/k6Z5/nv1Q20bbqIwmuoSsv83a4TkCNFXSK0pnG6+U+SNyI2EfH9Mou91ryePMODoGEUelHHjEZHe/4dQMOE7xUiGb3AqT605GIvZzGeDeeSYEmBD11RRByHJzyGYjG6IyES3++7xoJpeaLp74eqS96FOIXD+zsL+LQYUJ4ddDpqp6OAcfFq+eI411V0SjiTte0gU0PahuMwUzOovsLO2P226LnJumTpg06FbeCFPf9AM7g0JXHe+uGDcWoXXDuz9naCNBfIzdj8Y8fJy/gpSSXhwTxlQoZkEAGVEqvDfuvYjq0FrjmC+US5t7xr2joF4Uyz2xVT9+bRLay4ZC2kgujUOiSVtdZb1tYLz+PMxTBSqM65LBMA/pLmwm+oL1hXiOxyV8hOSOACd6NwCFNr7nbfTCgXVrK0hHNSabcV55mca+7v7e3W/AS2uHRHq0CrohRA6jvlfoxPnFEB/JVFgXlJL/INLPCa4jvIUXlV27WwfUu7lapr3HhK3UqfJr/I/r2fAJJFjVVgMoyDiUMrr/etKyKnbot/4T4/LromVGXzjx0uCg=</req:SecurityCredential>\r\n               </req:Initiator>\r\n                    <req:PrimaryParty>\r\n                        <req:IdentifierType>4</req:IdentifierType>\r\n                        <req:Identifier>900001</req:Identifier>\r\n                    </req:PrimaryParty>\r\n                    <req:ReceiverParty>\r\n                        <req:IdentifierType>1</req:IdentifierType>\r\n                        <req:Identifier>22224082004</req:Identifier>\r\n                    </req:ReceiverParty>\r\n                </req:Identity>\r\n                <req:StandardPrevalidationRequest>\r\n                    <req:RequestContext>\r\n                        <req:Parameter>\r\n                            <com:key>Service</com:key>\r\n                            <com:value>Promotional Commission</com:value>\r\n                        </req:Parameter>\r\n                        <req:Parameter>\r\n                            <com:key>Currency</com:key>\r\n                            <com:value>MRU</com:value>\r\n                        </req:Parameter>\r\n                        <req:Parameter>\r\n                            <com:key>Amount</com:key>\r\n                            <com:value>20</com:value>\r\n                        </req:Parameter>\r\n                        <req:Parameter>\r\n                            <com:key>PrevalidationType</com:key>\r\n                            <com:value>1</com:value>\r\n                        </req:Parameter>\r\n                    </req:RequestContext>\r\n                </req:StandardPrevalidationRequest>\r\n                <req:Remark>1212</req:Remark>\r\n            </req:Body>\r\n        </api:Request>\r\n    </soapenv:Body>\r\n</soapenv:Envelope>",
+									"options": {
+										"raw": {
+											"language": "text"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://41.188.122.234:30001/payment/services/SYNCAPIRequestMgrService",
+									"protocol": "http",
+									"host": [
+										"41",
+										"188",
+										"122",
+										"234"
+									],
+									"port": "30001",
+									"path": [
+										"payment",
+										"services",
+										"SYNCAPIRequestMgrService"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "xml",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nslb"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 07 Aug 2026 15:42:10 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/xml;charset=UTF-8"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "AG_30002=4569C34715F6F126FBB30183AA5A8F35351277DF5D4DB17C; Path=/payment; Secure; HttpOnly"
+								}
+							],
+							"cookie": [],
+							"body": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\">\n    <soapenv:Body>\n        <api:Result xmlns:api=\"http://cps.huawei.com/synccpsinterface/api_requestmgr\" xmlns:res=\"http://cps.huawei.com/synccpsinterface/result\">\n            <res:Header>\n                <res:Version>1.0</res:Version>\n                <res:OriginatorConversationID>S_X20250624115311</res:OriginatorConversationID>\n                <res:ConversationID>AG_20260807_7018148a3f5dN000DDMI</res:ConversationID>\n            </res:Header>\n            <res:Body>\n                <res:ResultType>0</res:ResultType>\n                <res:ResultCode>3008</res:ResultCode>\n                <res:ResultDesc>Failed to verify permissions.</res:ResultDesc>\n            </res:Body>\n        </api:Result>\n    </soapenv:Body>\n</soapenv:Envelope>"
+						},
+						{
+							"name": "StandardPrevalidation-Unregistered Customer",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:api=\"http://cps.huawei.com/synccpsinterface/api_requestmgr\" xmlns:req=\"http://cps.huawei.com/synccpsinterface/request\" xmlns:com=\"http://cps.huawei.com/synccpsinterface/common\" xmlns:cus=\"http://cps.huawei.com/cpsinterface/customizedrequest\">\r\n    <soapenv:Header/>\r\n    <soapenv:Body>\r\n        <api:Request>\r\n            <req:Header>\r\n                <req:Version>1.0</req:Version>\r\n                <req:CommandID>StandardPrevalidation</req:CommandID>\r\n                <req:OriginatorConversationID>S_X20250624115311</req:OriginatorConversationID>\r\n                <req:Caller>\r\n                    <req:CallerType>2</req:CallerType>\r\n                    <req:ThirdPartyID>Moov</req:ThirdPartyID>\r\n                    <req:Password>poQIYI6iouXhNiQp7Rs2AmqJuawq53BgJtLimBCbiFsZVXkZUKUFkbx/q0h9431ACGqVf8SqOpguFk+Bilf2e0gKOQQThUPPIz8vOyppsa9qs1Ly8p93xBuqm/k6Z5/nv1Q20bbqIwmuoSsv83a4TkCNFXSK0pnG6+U+SNyI2EfH9Mou91ryePMODoGEUelHHjEZHe/4dQMOE7xUiGb3AqT605GIvZzGeDeeSYEmBD11RRByHJzyGYjG6IyES3++7xoJpeaLp74eqS96FOIXD+zsL+LQYUJ4ddDpqp6OAcfFq+eI411V0SjiTte0gU0PahuMwUzOovsLO2P226LnJumTpg06FbeCFPf9AM7g0JXHe+uGDcWoXXDuz9naCNBfIzdj8Y8fJy/gpSSXhwTxlQoZkEAGVEqvDfuvYjq0FrjmC+US5t7xr2joF4Uyz2xVT9+bRLay4ZC2kgujUOiSVtdZb1tYLz+PMxTBSqM65LBMA/pLmwm+oL1hXiOxyV8hOSOACd6NwCFNr7nbfTCgXVrK0hHNSabcV55mca+7v7e3W/AS2uHRHq0CrohRA6jvlfoxPnFEB/JVFgXlJL/INLPCa4jvIUXlV27WwfUu7lapr3HhK3UqfJr/I/r2fAJJFjVVgMoyDiUMrr/etKyKnbot/4T4/LromVGXzjx0uCg=</req:Password>\r\n                </req:Caller>\r\n                <req:KeyOwner>1</req:KeyOwner>\r\n                <req:Timestamp>20250624115311</req:Timestamp>\r\n            </req:Header>\r\n            <req:Body>\r\n                <req:Identity>\r\n                    <req:Initiator>\r\n                  <req:IdentifierType>14</req:IdentifierType>\r\n                  <req:Identifier>Moov</req:Identifier>\r\n                  <req:SecurityCredential>poQIYI6iouXhNiQp7Rs2AmqJuawq53BgJtLimBCbiFsZVXkZUKUFkbx/q0h9431ACGqVf8SqOpguFk+Bilf2e0gKOQQThUPPIz8vOyppsa9qs1Ly8p93xBuqm/k6Z5/nv1Q20bbqIwmuoSsv83a4TkCNFXSK0pnG6+U+SNyI2EfH9Mou91ryePMODoGEUelHHjEZHe/4dQMOE7xUiGb3AqT605GIvZzGeDeeSYEmBD11RRByHJzyGYjG6IyES3++7xoJpeaLp74eqS96FOIXD+zsL+LQYUJ4ddDpqp6OAcfFq+eI411V0SjiTte0gU0PahuMwUzOovsLO2P226LnJumTpg06FbeCFPf9AM7g0JXHe+uGDcWoXXDuz9naCNBfIzdj8Y8fJy/gpSSXhwTxlQoZkEAGVEqvDfuvYjq0FrjmC+US5t7xr2joF4Uyz2xVT9+bRLay4ZC2kgujUOiSVtdZb1tYLz+PMxTBSqM65LBMA/pLmwm+oL1hXiOxyV8hOSOACd6NwCFNr7nbfTCgXVrK0hHNSabcV55mca+7v7e3W/AS2uHRHq0CrohRA6jvlfoxPnFEB/JVFgXlJL/INLPCa4jvIUXlV27WwfUu7lapr3HhK3UqfJr/I/r2fAJJFjVVgMoyDiUMrr/etKyKnbot/4T4/LromVGXzjx0uCg=</req:SecurityCredential>\r\n               </req:Initiator>\r\n                    <req:PrimaryParty>\r\n                        <req:IdentifierType>4</req:IdentifierType>\r\n                        <req:Identifier>1234</req:Identifier>\r\n                    </req:PrimaryParty>\r\n                    <req:ReceiverParty>\r\n                        <req:IdentifierType>1</req:IdentifierType>\r\n                        <req:Identifier>2228042004</req:Identifier>\r\n                    </req:ReceiverParty>\r\n                </req:Identity>\r\n                <req:StandardPrevalidationRequest>\r\n                    <req:RequestContext>\r\n                        <req:Parameter>\r\n                            <com:key>Service</com:key>\r\n                            <com:value>Promotional Commission</com:value>\r\n                        </req:Parameter>\r\n                        <req:Parameter>\r\n                            <com:key>Currency</com:key>\r\n                            <com:value>MRU</com:value>\r\n                        </req:Parameter>\r\n                        <req:Parameter>\r\n                            <com:key>Amount</com:key>\r\n                            <com:value>20</com:value>\r\n                        </req:Parameter>\r\n                        <req:Parameter>\r\n                            <com:key>PrevalidationType</com:key>\r\n                            <com:value>1</com:value>\r\n                        </req:Parameter>\r\n                    </req:RequestContext>\r\n                </req:StandardPrevalidationRequest>\r\n                <req:Remark>1212</req:Remark>\r\n            </req:Body>\r\n        </api:Request>\r\n    </soapenv:Body>\r\n</soapenv:Envelope>",
+									"options": {
+										"raw": {
+											"language": "text"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://41.188.122.234:30001/payment/services/SYNCAPIRequestMgrService",
+									"protocol": "http",
+									"host": [
+										"41",
+										"188",
+										"122",
+										"234"
+									],
+									"port": "30001",
+									"path": [
+										"payment",
+										"services",
+										"SYNCAPIRequestMgrService"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "xml",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nslb"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 07 Aug 2026 15:59:55 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/xml;charset=UTF-8"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "AG_30002=41F14A6B6560E524D73BEEB9F59F1F43976580D4A41FBE2A; Path=/payment; Secure; HttpOnly"
+								}
+							],
+							"cookie": [],
+							"body": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\">\n    <soapenv:Body>\n        <api:Result xmlns:api=\"http://cps.huawei.com/synccpsinterface/api_requestmgr\" xmlns:res=\"http://cps.huawei.com/synccpsinterface/result\">\n            <res:Header>\n                <res:Version>1.0</res:Version>\n                <res:OriginatorConversationID>S_X20250624115311</res:OriginatorConversationID>\n                <res:ConversationID>AG_20260807_70151e45a49uZ000DF5T</res:ConversationID>\n            </res:Header>\n            <res:Body>\n                <res:ResultType>0</res:ResultType>\n                <res:ResultCode>3015</res:ResultCode>\n                <res:ResultDesc>MSISDN verification failed.</res:ResultDesc>\n            </res:Body>\n        </api:Result>\n    </soapenv:Body>\n</soapenv:Envelope>"
+						}
+					]
+				},
+				{
+					"name": "Promotional Commission Payment",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\">\r\n    <soapenv:Body>\r\n        <api:Request xmlns:api=\"http://cps.huawei.com/synccpsinterface/api_requestmgr\" xmlns:req=\"http://cps.huawei.com/synccpsinterface/request\">\r\n            <req:Header>\r\n                <req:Version>1.0</req:Version>\r\n                <req:CommandID>InitTrans_Promotional Commission</req:CommandID>\r\n                <req:OriginatorConversationID>S_X20171211143322046</req:OriginatorConversationID>\r\n                <req:Caller>\r\n                    <req:CallerType>2</req:CallerType>\r\n                    <req:ThirdPartyID>Moov</req:ThirdPartyID>\r\n                    <req:Password>poQIYI6iouXhNiQp7Rs2AmqJuawq53BgJtLimBCbiFsZVXkZUKUFkbx/q0h9431ACGqVf8SqOpguFk+Bilf2e0gKOQQThUPPIz8vOyppsa9qs1Ly8p93xBuqm/k6Z5/nv1Q20bbqIwmuoSsv83a4TkCNFXSK0pnG6+U+SNyI2EfH9Mou91ryePMODoGEUelHHjEZHe/4dQMOE7xUiGb3AqT605GIvZzGeDeeSYEmBD11RRByHJzyGYjG6IyES3++7xoJpeaLp74eqS96FOIXD+zsL+LQYUJ4ddDpqp6OAcfFq+eI411V0SjiTte0gU0PahuMwUzOovsLO2P226LnJumTpg06FbeCFPf9AM7g0JXHe+uGDcWoXXDuz9naCNBfIzdj8Y8fJy/gpSSXhwTxlQoZkEAGVEqvDfuvYjq0FrjmC+US5t7xr2joF4Uyz2xVT9+bRLay4ZC2kgujUOiSVtdZb1tYLz+PMxTBSqM65LBMA/pLmwm+oL1hXiOxyV8hOSOACd6NwCFNr7nbfTCgXVrK0hHNSabcV55mca+7v7e3W/AS2uHRHq0CrohRA6jvlfoxPnFEB/JVFgXlJL/INLPCa4jvIUXlV27WwfUu7lapr3HhK3UqfJr/I/r2fAJJFjVVgMoyDiUMrr/etKyKnbot/4T4/LromVGXzjx0uCg=</req:Password>\r\n                </req:Caller>\r\n                <req:KeyOwner>1</req:KeyOwner>\r\n                <req:Timestamp>20170101010101</req:Timestamp>\r\n            </req:Header>\r\n            <req:Body>\r\n                <req:Identity>\r\n                   <req:Initiator>\r\n                  <req:IdentifierType>14</req:IdentifierType>\r\n                  <req:Identifier>Moov</req:Identifier>\r\n                  <req:SecurityCredential>poQIYI6iouXhNiQp7Rs2AmqJuawq53BgJtLimBCbiFsZVXkZUKUFkbx/q0h9431ACGqVf8SqOpguFk+Bilf2e0gKOQQThUPPIz8vOyppsa9qs1Ly8p93xBuqm/k6Z5/nv1Q20bbqIwmuoSsv83a4TkCNFXSK0pnG6+U+SNyI2EfH9Mou91ryePMODoGEUelHHjEZHe/4dQMOE7xUiGb3AqT605GIvZzGeDeeSYEmBD11RRByHJzyGYjG6IyES3++7xoJpeaLp74eqS96FOIXD+zsL+LQYUJ4ddDpqp6OAcfFq+eI411V0SjiTte0gU0PahuMwUzOovsLO2P226LnJumTpg06FbeCFPf9AM7g0JXHe+uGDcWoXXDuz9naCNBfIzdj8Y8fJy/gpSSXhwTxlQoZkEAGVEqvDfuvYjq0FrjmC+US5t7xr2joF4Uyz2xVT9+bRLay4ZC2kgujUOiSVtdZb1tYLz+PMxTBSqM65LBMA/pLmwm+oL1hXiOxyV8hOSOACd6NwCFNr7nbfTCgXVrK0hHNSabcV55mca+7v7e3W/AS2uHRHq0CrohRA6jvlfoxPnFEB/JVFgXlJL/INLPCa4jvIUXlV27WwfUu7lapr3HhK3UqfJr/I/r2fAJJFjVVgMoyDiUMrr/etKyKnbot/4T4/LromVGXzjx0uCg=</req:SecurityCredential>\r\n               </req:Initiator>\r\n                    <req:PrimaryParty>\r\n                        <req:IdentifierType>4</req:IdentifierType>\r\n                        <req:Identifier>1234</req:Identifier>\r\n                    </req:PrimaryParty>\r\n                    <req:ReceiverParty>\r\n                        <req:IdentifierType>1</req:IdentifierType>\r\n                        <req:Identifier>22224082004</req:Identifier>\r\n                    </req:ReceiverParty>\r\n                </req:Identity>\r\n                <req:TransactionRequest>\r\n                    <req:Parameters>\r\n                        <req:Amount>50</req:Amount>\r\n                        <req:Currency>MRU</req:Currency>\r\n                    </req:Parameters>\r\n                </req:TransactionRequest>\r\n            </req:Body>\r\n        </api:Request>\r\n    </soapenv:Body>\r\n</soapenv:Envelope>",
+							"options": {
+								"raw": {
+									"language": "text"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://41.188.122.234:30001/payment/services/SYNCAPIRequestMgrService",
+							"protocol": "http",
+							"host": [
+								"41",
+								"188",
+								"122",
+								"234"
+							],
+							"port": "30001",
+							"path": [
+								"payment",
+								"services",
+								"SYNCAPIRequestMgrService"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Promotional Commission Payment",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\">\r\n    <soapenv:Body>\r\n        <api:Request xmlns:api=\"http://cps.huawei.com/synccpsinterface/api_requestmgr\" xmlns:req=\"http://cps.huawei.com/synccpsinterface/request\">\r\n            <req:Header>\r\n                <req:Version>1.0</req:Version>\r\n                <req:CommandID>InitTrans_Promotional Commission</req:CommandID>\r\n                <req:OriginatorConversationID>S_X20171211143322046</req:OriginatorConversationID>\r\n                <req:Caller>\r\n                    <req:CallerType>2</req:CallerType>\r\n                    <req:ThirdPartyID>Moov</req:ThirdPartyID>\r\n                    <req:Password>poQIYI6iouXhNiQp7Rs2AmqJuawq53BgJtLimBCbiFsZVXkZUKUFkbx/q0h9431ACGqVf8SqOpguFk+Bilf2e0gKOQQThUPPIz8vOyppsa9qs1Ly8p93xBuqm/k6Z5/nv1Q20bbqIwmuoSsv83a4TkCNFXSK0pnG6+U+SNyI2EfH9Mou91ryePMODoGEUelHHjEZHe/4dQMOE7xUiGb3AqT605GIvZzGeDeeSYEmBD11RRByHJzyGYjG6IyES3++7xoJpeaLp74eqS96FOIXD+zsL+LQYUJ4ddDpqp6OAcfFq+eI411V0SjiTte0gU0PahuMwUzOovsLO2P226LnJumTpg06FbeCFPf9AM7g0JXHe+uGDcWoXXDuz9naCNBfIzdj8Y8fJy/gpSSXhwTxlQoZkEAGVEqvDfuvYjq0FrjmC+US5t7xr2joF4Uyz2xVT9+bRLay4ZC2kgujUOiSVtdZb1tYLz+PMxTBSqM65LBMA/pLmwm+oL1hXiOxyV8hOSOACd6NwCFNr7nbfTCgXVrK0hHNSabcV55mca+7v7e3W/AS2uHRHq0CrohRA6jvlfoxPnFEB/JVFgXlJL/INLPCa4jvIUXlV27WwfUu7lapr3HhK3UqfJr/I/r2fAJJFjVVgMoyDiUMrr/etKyKnbot/4T4/LromVGXzjx0uCg=</req:Password>\r\n                </req:Caller>\r\n                <req:KeyOwner>1</req:KeyOwner>\r\n                <req:Timestamp>20170101010101</req:Timestamp>\r\n            </req:Header>\r\n            <req:Body>\r\n                <req:Identity>\r\n                   <req:Initiator>\r\n                  <req:IdentifierType>14</req:IdentifierType>\r\n                  <req:Identifier>Moov</req:Identifier>\r\n                  <req:SecurityCredential>poQIYI6iouXhNiQp7Rs2AmqJuawq53BgJtLimBCbiFsZVXkZUKUFkbx/q0h9431ACGqVf8SqOpguFk+Bilf2e0gKOQQThUPPIz8vOyppsa9qs1Ly8p93xBuqm/k6Z5/nv1Q20bbqIwmuoSsv83a4TkCNFXSK0pnG6+U+SNyI2EfH9Mou91ryePMODoGEUelHHjEZHe/4dQMOE7xUiGb3AqT605GIvZzGeDeeSYEmBD11RRByHJzyGYjG6IyES3++7xoJpeaLp74eqS96FOIXD+zsL+LQYUJ4ddDpqp6OAcfFq+eI411V0SjiTte0gU0PahuMwUzOovsLO2P226LnJumTpg06FbeCFPf9AM7g0JXHe+uGDcWoXXDuz9naCNBfIzdj8Y8fJy/gpSSXhwTxlQoZkEAGVEqvDfuvYjq0FrjmC+US5t7xr2joF4Uyz2xVT9+bRLay4ZC2kgujUOiSVtdZb1tYLz+PMxTBSqM65LBMA/pLmwm+oL1hXiOxyV8hOSOACd6NwCFNr7nbfTCgXVrK0hHNSabcV55mca+7v7e3W/AS2uHRHq0CrohRA6jvlfoxPnFEB/JVFgXlJL/INLPCa4jvIUXlV27WwfUu7lapr3HhK3UqfJr/I/r2fAJJFjVVgMoyDiUMrr/etKyKnbot/4T4/LromVGXzjx0uCg=</req:SecurityCredential>\r\n               </req:Initiator>\r\n                    <req:PrimaryParty>\r\n                        <req:IdentifierType>4</req:IdentifierType>\r\n                        <req:Identifier>1234</req:Identifier>\r\n                    </req:PrimaryParty>\r\n                    <req:ReceiverParty>\r\n                        <req:IdentifierType>1</req:IdentifierType>\r\n                        <req:Identifier>22224082004</req:Identifier>\r\n                    </req:ReceiverParty>\r\n                </req:Identity>\r\n                <req:TransactionRequest>\r\n                    <req:Parameters>\r\n                        <req:Amount>50</req:Amount>\r\n                        <req:Currency>MRU</req:Currency>\r\n                    </req:Parameters>\r\n                </req:TransactionRequest>\r\n            </req:Body>\r\n        </api:Request>\r\n    </soapenv:Body>\r\n</soapenv:Envelope>",
+									"options": {
+										"raw": {
+											"language": "text"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://41.188.122.234:30001/payment/services/SYNCAPIRequestMgrService",
+									"protocol": "http",
+									"host": [
+										"41",
+										"188",
+										"122",
+										"234"
+									],
+									"port": "30001",
+									"path": [
+										"payment",
+										"services",
+										"SYNCAPIRequestMgrService"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "xml",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nslb"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 07 Aug 2026 15:56:09 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/xml;charset=UTF-8"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "AG_30002=A819A1717600794664596F827B8C84708FE5B89A567716A4; Path=/payment; Secure; HttpOnly"
+								}
+							],
+							"cookie": [],
+							"body": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\">\n    <soapenv:Body>\n        <api:Result xmlns:api=\"http://cps.huawei.com/synccpsinterface/api_requestmgr\" xmlns:res=\"http://cps.huawei.com/synccpsinterface/result\" xmlns:com=\"http://cps.huawei.com/synccpsinterface/common\">\n            <res:Header>\n                <res:Version>1.0</res:Version>\n                <res:OriginatorConversationID>S_X20171211143322046</res:OriginatorConversationID>\n                <res:ConversationID>AG_20260807_7012a59d46cqr000DERD</res:ConversationID>\n            </res:Header>\n            <res:Body>\n                <res:ResultType>0</res:ResultType>\n                <res:ResultCode>0</res:ResultCode>\n                <res:ResultDesc>Process service request successfully.</res:ResultDesc>\n                <res:TransactionResult>\n                    <res:TransactionID>000015220076</res:TransactionID>\n                    <res:ResultParameters>\n                        <res:ResultParameter>\n                            <com:Key>DebitBalance</com:Key>\n                            <com:Value/>\n                        </res:ResultParameter>\n                        <res:ResultParameter>\n                            <com:Key>CreditBalance</com:Key>\n                            <com:Value>{\"total\":[{\"amount\":\"124768.50\",\"currency\":\"MRU\"}],\"list\":[{\"amount\":\"124768.50\",\"accountno\":\"100000000110391685\",\"currency\":\"MRU\",\"accounttypename\":\"Customer E-Money Account\"},{\"amount\":\"0.00\",\"accountno\":\"100000000110391677\",\"currency\":\"MRU\",\"accounttypename\":\"CashBack E-Money Account\"}]}</com:Value>\n                        </res:ResultParameter>\n                    </res:ResultParameters>\n                </res:TransactionResult>\n            </res:Body>\n        </api:Result>\n    </soapenv:Body>\n</soapenv:Envelope>"
+						}
+					]
+				},
+				{
+					"name": "QueryOrganizationTransactions",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:api=\"http://cps.huawei.com/synccpsinterface/api_requestmgr\" xmlns:req=\"http://cps.huawei.com/synccpsinterface/request\" xmlns:com=\"http://cps.huawei.com/synccpsinterface/common\"> \r\n   <soapenv:Header/> \r\n   <soapenv:Body> \r\n      <api:Request> \r\n         <req:Header> \r\n            <req:Version>1.0</req:Version> \r\n            <req:CommandID>SyncQueryOrgTxn</req:CommandID> \r\n            <req:OriginatorConversationID>S_X2013012921001</req:OriginatorConversationID> \r\n             <req:Caller>\r\n                    <req:CallerType>2</req:CallerType>\r\n                    <req:ThirdPartyID>Moov</req:ThirdPartyID>\r\n                    <req:Password>poQIYI6iouXhNiQp7Rs2AmqJuawq53BgJtLimBCbiFsZVXkZUKUFkbx/q0h9431ACGqVf8SqOpguFk+Bilf2e0gKOQQThUPPIz8vOyppsa9qs1Ly8p93xBuqm/k6Z5/nv1Q20bbqIwmuoSsv83a4TkCNFXSK0pnG6+U+SNyI2EfH9Mou91ryePMODoGEUelHHjEZHe/4dQMOE7xUiGb3AqT605GIvZzGeDeeSYEmBD11RRByHJzyGYjG6IyES3++7xoJpeaLp74eqS96FOIXD+zsL+LQYUJ4ddDpqp6OAcfFq+eI411V0SjiTte0gU0PahuMwUzOovsLO2P226LnJumTpg06FbeCFPf9AM7g0JXHe+uGDcWoXXDuz9naCNBfIzdj8Y8fJy/gpSSXhwTxlQoZkEAGVEqvDfuvYjq0FrjmC+US5t7xr2joF4Uyz2xVT9+bRLay4ZC2kgujUOiSVtdZb1tYLz+PMxTBSqM65LBMA/pLmwm+oL1hXiOxyV8hOSOACd6NwCFNr7nbfTCgXVrK0hHNSabcV55mca+7v7e3W/AS2uHRHq0CrohRA6jvlfoxPnFEB/JVFgXlJL/INLPCa4jvIUXlV27WwfUu7lapr3HhK3UqfJr/I/r2fAJJFjVVgMoyDiUMrr/etKyKnbot/4T4/LromVGXzjx0uCg=</req:Password>\r\n                </req:Caller>\r\n            <req:KeyOwner>1</req:KeyOwner> \r\n            <req:Timestamp>20130402152345</req:Timestamp> \r\n         </req:Header> \r\n         <req:Body> \r\n            <req:Identity> \r\n              <req:Initiator>\r\n                  <req:IdentifierType>14</req:IdentifierType>\r\n                  <req:Identifier>Moov</req:Identifier>\r\n                  <req:SecurityCredential>poQIYI6iouXhNiQp7Rs2AmqJuawq53BgJtLimBCbiFsZVXkZUKUFkbx/q0h9431ACGqVf8SqOpguFk+Bilf2e0gKOQQThUPPIz8vOyppsa9qs1Ly8p93xBuqm/k6Z5/nv1Q20bbqIwmuoSsv83a4TkCNFXSK0pnG6+U+SNyI2EfH9Mou91ryePMODoGEUelHHjEZHe/4dQMOE7xUiGb3AqT605GIvZzGeDeeSYEmBD11RRByHJzyGYjG6IyES3++7xoJpeaLp74eqS96FOIXD+zsL+LQYUJ4ddDpqp6OAcfFq+eI411V0SjiTte0gU0PahuMwUzOovsLO2P226LnJumTpg06FbeCFPf9AM7g0JXHe+uGDcWoXXDuz9naCNBfIzdj8Y8fJy/gpSSXhwTxlQoZkEAGVEqvDfuvYjq0FrjmC+US5t7xr2joF4Uyz2xVT9+bRLay4ZC2kgujUOiSVtdZb1tYLz+PMxTBSqM65LBMA/pLmwm+oL1hXiOxyV8hOSOACd6NwCFNr7nbfTCgXVrK0hHNSabcV55mca+7v7e3W/AS2uHRHq0CrohRA6jvlfoxPnFEB/JVFgXlJL/INLPCa4jvIUXlV27WwfUu7lapr3HhK3UqfJr/I/r2fAJJFjVVgMoyDiUMrr/etKyKnbot/4T4/LromVGXzjx0uCg=</req:SecurityCredential>\r\n               </req:Initiator>\r\n               <req:ReceiverParty> \r\n                  <req:IdentifierType>4</req:IdentifierType> \r\n                  <req:Identifier>1234</req:Identifier> \r\n               </req:ReceiverParty> \r\n            </req:Identity> \r\n            <req:SyncQueryOrgTxnRequest> \r\n               <req:AccountType>Organization E-Money Account</req:AccountType> \r\n               <req:StartDateTime>20260807093000</req:StartDateTime> \r\n               <req:EndDateTime>20260901093000</req:EndDateTime> \r\n               <req:TransactionStatus>Completed</req:TransactionStatus> \r\n               <req:Currency>MRU</req:Currency> \r\n            </req:SyncQueryOrgTxnRequest> \r\n         </req:Body> \r\n      </api:Request> \r\n   </soapenv:Body> \r\n</soapenv:Envelope>\r\n",
+							"options": {
+								"raw": {
+									"language": "text"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://41.188.122.234:30001/payment/services/SYNCAPIRequestMgrService",
+							"protocol": "http",
+							"host": [
+								"41",
+								"188",
+								"122",
+								"234"
+							],
+							"port": "30001",
+							"path": [
+								"payment",
+								"services",
+								"SYNCAPIRequestMgrService"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "QueryOrganizationTransactions",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:api=\"http://cps.huawei.com/synccpsinterface/api_requestmgr\" xmlns:req=\"http://cps.huawei.com/synccpsinterface/request\" xmlns:com=\"http://cps.huawei.com/synccpsinterface/common\"> \r\n   <soapenv:Header/> \r\n   <soapenv:Body> \r\n      <api:Request> \r\n         <req:Header> \r\n            <req:Version>1.0</req:Version> \r\n            <req:CommandID>SyncQueryOrgTxn</req:CommandID> \r\n            <req:OriginatorConversationID>S_X2013012921001</req:OriginatorConversationID> \r\n             <req:Caller>\r\n                    <req:CallerType>2</req:CallerType>\r\n                    <req:ThirdPartyID>Moov</req:ThirdPartyID>\r\n                    <req:Password>poQIYI6iouXhNiQp7Rs2AmqJuawq53BgJtLimBCbiFsZVXkZUKUFkbx/q0h9431ACGqVf8SqOpguFk+Bilf2e0gKOQQThUPPIz8vOyppsa9qs1Ly8p93xBuqm/k6Z5/nv1Q20bbqIwmuoSsv83a4TkCNFXSK0pnG6+U+SNyI2EfH9Mou91ryePMODoGEUelHHjEZHe/4dQMOE7xUiGb3AqT605GIvZzGeDeeSYEmBD11RRByHJzyGYjG6IyES3++7xoJpeaLp74eqS96FOIXD+zsL+LQYUJ4ddDpqp6OAcfFq+eI411V0SjiTte0gU0PahuMwUzOovsLO2P226LnJumTpg06FbeCFPf9AM7g0JXHe+uGDcWoXXDuz9naCNBfIzdj8Y8fJy/gpSSXhwTxlQoZkEAGVEqvDfuvYjq0FrjmC+US5t7xr2joF4Uyz2xVT9+bRLay4ZC2kgujUOiSVtdZb1tYLz+PMxTBSqM65LBMA/pLmwm+oL1hXiOxyV8hOSOACd6NwCFNr7nbfTCgXVrK0hHNSabcV55mca+7v7e3W/AS2uHRHq0CrohRA6jvlfoxPnFEB/JVFgXlJL/INLPCa4jvIUXlV27WwfUu7lapr3HhK3UqfJr/I/r2fAJJFjVVgMoyDiUMrr/etKyKnbot/4T4/LromVGXzjx0uCg=</req:Password>\r\n                </req:Caller>\r\n            <req:KeyOwner>1</req:KeyOwner> \r\n            <req:Timestamp>20130402152345</req:Timestamp> \r\n         </req:Header> \r\n         <req:Body> \r\n            <req:Identity> \r\n              <req:Initiator>\r\n                  <req:IdentifierType>14</req:IdentifierType>\r\n                  <req:Identifier>Moov</req:Identifier>\r\n                  <req:SecurityCredential>poQIYI6iouXhNiQp7Rs2AmqJuawq53BgJtLimBCbiFsZVXkZUKUFkbx/q0h9431ACGqVf8SqOpguFk+Bilf2e0gKOQQThUPPIz8vOyppsa9qs1Ly8p93xBuqm/k6Z5/nv1Q20bbqIwmuoSsv83a4TkCNFXSK0pnG6+U+SNyI2EfH9Mou91ryePMODoGEUelHHjEZHe/4dQMOE7xUiGb3AqT605GIvZzGeDeeSYEmBD11RRByHJzyGYjG6IyES3++7xoJpeaLp74eqS96FOIXD+zsL+LQYUJ4ddDpqp6OAcfFq+eI411V0SjiTte0gU0PahuMwUzOovsLO2P226LnJumTpg06FbeCFPf9AM7g0JXHe+uGDcWoXXDuz9naCNBfIzdj8Y8fJy/gpSSXhwTxlQoZkEAGVEqvDfuvYjq0FrjmC+US5t7xr2joF4Uyz2xVT9+bRLay4ZC2kgujUOiSVtdZb1tYLz+PMxTBSqM65LBMA/pLmwm+oL1hXiOxyV8hOSOACd6NwCFNr7nbfTCgXVrK0hHNSabcV55mca+7v7e3W/AS2uHRHq0CrohRA6jvlfoxPnFEB/JVFgXlJL/INLPCa4jvIUXlV27WwfUu7lapr3HhK3UqfJr/I/r2fAJJFjVVgMoyDiUMrr/etKyKnbot/4T4/LromVGXzjx0uCg=</req:SecurityCredential>\r\n               </req:Initiator>\r\n               <req:ReceiverParty> \r\n                  <req:IdentifierType>4</req:IdentifierType> \r\n                  <req:Identifier>1234</req:Identifier> \r\n               </req:ReceiverParty> \r\n            </req:Identity> \r\n            <req:SyncQueryOrgTxnRequest> \r\n               <req:AccountType>Organization E-Money Account</req:AccountType> \r\n               <req:StartDateTime>20260807093000</req:StartDateTime> \r\n               <req:EndDateTime>20260901093000</req:EndDateTime> \r\n               <req:TransactionStatus>Completed</req:TransactionStatus> \r\n               <req:Currency>MRU</req:Currency> \r\n            </req:SyncQueryOrgTxnRequest> \r\n         </req:Body> \r\n      </api:Request> \r\n   </soapenv:Body> \r\n</soapenv:Envelope>\r\n",
+									"options": {
+										"raw": {
+											"language": "text"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://41.188.122.234:30001/payment/services/SYNCAPIRequestMgrService",
+									"protocol": "http",
+									"host": [
+										"41",
+										"188",
+										"122",
+										"234"
+									],
+									"port": "30001",
+									"path": [
+										"payment",
+										"services",
+										"SYNCAPIRequestMgrService"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "xml",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nslb"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 07 Aug 2026 16:18:10 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/xml;charset=UTF-8"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "AG_30002=9199D033C50C9409F089EEF3F005E2D6C22CBE571A5FCE52; Path=/payment; Secure; HttpOnly"
+								}
+							],
+							"cookie": [],
+							"body": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\">\n    <soapenv:Body>\n        <api:Result xmlns:api=\"http://cps.huawei.com/synccpsinterface/api_requestmgr\" xmlns:res=\"http://cps.huawei.com/synccpsinterface/result\">\n            <res:Header>\n                <res:Version>1.0</res:Version>\n                <res:OriginatorConversationID>S_X2013012921001</res:OriginatorConversationID>\n                <res:ConversationID>AG_20260807_701d65fee40CB000DGLR</res:ConversationID>\n            </res:Header>\n            <res:Body>\n                <res:ResultType>0</res:ResultType>\n                <res:ResultCode>0</res:ResultCode>\n                <res:ResultDesc>Process service request successfully.</res:ResultDesc>\n                <res:SyncQueryOrgTxnResult>\n                    <res:BOCompletedTime>20260807161810</res:BOCompletedTime>\n                    <res:TransactionListData>\n                        <res:TransactionItem>\n                            <res:ReceiptNumber>000015220076</res:ReceiptNumber>\n                            <res:TransactionStatus>Completed</res:TransactionStatus>\n                            <res:TxnType>B2C</res:TxnType>\n                            <res:InitiatorName>Moov Money Mauritel SP\\Moov</res:InitiatorName>\n                            <res:Currency>MRU</res:Currency>\n                            <res:Amount>50.00</res:Amount>\n                            <res:InitiatedTime>20260807155605</res:InitiatedTime>\n                            <res:CompletedTime>20260807155606</res:CompletedTime>\n                            <res:Details/>\n                        </res:TransactionItem>\n                        <res:NbrOfReturned>1</res:NbrOfReturned>\n                        <res:NbrOfTotal>1</res:NbrOfTotal>\n                    </res:TransactionListData>\n                </res:SyncQueryOrgTxnResult>\n            </res:Body>\n        </api:Result>\n    </soapenv:Body>\n</soapenv:Envelope>"
+						}
+					]
+				}
+			]
+		}
+	]
+}

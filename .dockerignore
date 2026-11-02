@@ -1,0 +1,22 @@
+# Dépendances et logs
+node_modules
+npm-debug.log
+
+# Fichiers de l'environnement Docker
+Dockerfile
+docker-compose.yml
+.dockerignore
+
+# Variables d'environnement locales (Très important pour la sécurité)
+.env
+
+# Métadonnées Git
+.git
+.gitignore
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Dossier d'uploads (sera géré par un volume Docker)
+uploads

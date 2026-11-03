@@ -1,20 +1,33 @@
-version: '3.8'
+# Remplace « npm start » sur la machine applicative.
+# Mongo reste sur la machine donnees (MONGO_URI dans .env, deja 172.16.0.96).
+# Le dossier ./uploads de cette machine est monte dans le conteneur :
+# les photos survivent a un redemarrage ou a une reconstruction.
 
 services:
   backend:
     build: .
-    container_name: moov-backend
+    image: pnam-backend
+    container_name: pnam-backend
     restart: unless-stopped
     env_file: .env
+    environment:
+      HOST: 0.0.0.0
+      PORT: "5000"
+      NODE_ENV: production
+      UPLOAD_DIR: /data/uploads
     ports:
-      # On mappe le port 3000 de l'EC2 vers le port 5000 du conteneur
-      - "3000:5000"
-    networks:
-      - app-network
-
-networks:
-  app-network:
-    driver: bridge
-
-volumes:
-  uploads:
+      - "5000:5000"
+    volumes:
+      - ./uploads:/data/uploads
+    healthcheck:
+      test:
+        [
+          "CMD",
+          "node",
+          "-e",
+          "fetch('http://127.0.0.1:5000/api/health').then(r=>process.exit(r.status===200?0:1)).catch(()=>process.exit(1))",
+        ]
+      interval: 30s
+      timeout: 5s
+      retries: 5
+      start_period: 20s

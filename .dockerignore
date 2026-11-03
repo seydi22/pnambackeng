@@ -18,5 +18,7 @@ docker-compose.yml
 .DS_Store
 Thumbs.db
 
-# Dossier d'uploads (sera géré par un volume Docker)
+# Dossier d'uploads (monte par docker-compose, pas copie dans l'image)
 uploads
+coverage
+*.md

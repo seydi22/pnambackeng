@@ -3,6 +3,7 @@ const Agent = require('../models/Agent');
 const Pam = require('../models/Pam');
 const Eam = require('../models/Eam');
 const Zone = require('../models/Zone');
+const MatriculeSequence = require('../models/MatriculeSequence');
 const { listZones } = require('./zoneService');
 const { ORG_ROLES } = require('../utils/roles');
 const { isNouakchott } = require('../data/territoires');
@@ -157,12 +158,10 @@ async function readStem(region, moughataa) {
     }
 }
 
-const SHORT_PREFIX = { PAM: 'P', SAM: 'S', CAM: 'C', EAM: 'E' };
+const CODE_PREFIX = { PAM: 'PAM', SAM: 'SAM', CAM: 'CAM', EAM: 'EQP' };
 
-async function nextCode(rolePrefix) {
-    const letter = SHORT_PREFIX[rolePrefix];
-    if (!letter) throw new OrgError('Role de code invalide.');
-    const pattern = new RegExp(`^${letter}(\\d+)$`);
+async function highestIssued(prefix) {
+    const pattern = new RegExp(`^${prefix}(\\d+)$`, 'i');
     const [agents, eams, pams] = await Promise.all([
         Agent.find({ matricule: pattern }).select('matricule').lean(),
         Eam.find({ nom: pattern }).select('nom').lean(),
@@ -170,11 +169,28 @@ async function nextCode(rolePrefix) {
     ]);
     let max = 0;
     [...agents, ...eams, ...pams].forEach((row) => {
-        const value = row.matricule || row.nom || '';
+        const value = String(row.matricule || row.nom || '').toUpperCase();
         const match = pattern.exec(value);
         if (match) max = Math.max(max, Number(match[1]));
     });
-    return `${letter}${String(max + 1).padStart(2, '0')}`;
+    return max;
+}
+
+async function nextCode(rolePrefix) {
+    const prefix = CODE_PREFIX[rolePrefix];
+    if (!prefix) throw new OrgError('Role de code invalide.');
+    const floor = await highestIssued(prefix);
+    await MatriculeSequence.updateOne(
+        { cle: prefix },
+        { $max: { seq: floor } },
+        { upsert: true }
+    );
+    const counter = await MatriculeSequence.findOneAndUpdate(
+        { cle: prefix },
+        { $inc: { seq: 1 } },
+        { new: true }
+    );
+    return `${prefix}${String(counter.seq).padStart(4, '0')}`;
 }
 
 function hasTerritory(pam) {
@@ -360,7 +376,7 @@ function assertTeamLogin(equipe) {
 }
 
 async function createTeamLogin(eam, equipe) {
-    const matricule = clean(equipe.matricule);
+    const matricule = clean(equipe.matricule).toUpperCase();
     const motDePasse = String(equipe.motDePasse);
     const exists = await Agent.findOne({ matricule }).select('_id');
     if (exists) throw new OrgError('Ce matricule existe deja.');
@@ -499,7 +515,7 @@ async function updateEam(id, { nom, pamId, samId, actif, sam, equipe, membres })
 }
 
 async function createOrgUser(body) {
-    let matricule = clean(body.matricule);
+    let matricule = clean(body.matricule).toUpperCase();
     const nom = clean(body.nom);
     const prenom = clean(body.prenom);
     const motDePasse = body.motDePasse == null ? '' : String(body.motDePasse);
